@@ -1,0 +1,7 @@
+commuting, scale 0.5: 0/2000 violations, min margin +3.797e-03
+generic,   scale 0.5: 72/2000 violations, worst lambda_min -8.768e-02
+generic,   scale 0.5: 51/1000 violations, worst lambda_min -4.175e-02
+generic,   scale 0.1: 51/1000 violations, worst lambda_min -2.335e-02
+generic,   scale 0.01: 45/1000 violations, worst lambda_min -1.894e-03
+generic,   scale 0.001: 51/1000 violations, worst lambda_min -2.038e-04
+generic,   scale 0.0001: 48/1000 violations, worst lambda_min -7.562e-06

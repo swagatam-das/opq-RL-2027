@@ -1,0 +1,18 @@
+[boson] N=12 K=6 T=6  Var(test returns) = 0.1167
+   planted-solution check: test MSE 2.08e-32
+   S(10) by Fock truncation: {6: 29902.156646686377, 12: 1069242.4261737005, 24: 23547332.64932871}; swap phase -0.3596 (untruncated 2 Im(a b*) = -0.3596)
+   Scalar order-blind (t, a_t)        params     31  test MSE 1.156e-01
+   Windowed table (t, a_{t-1}, a_t)   params    156  test MSE 1.153e-01
+   GRU, hidden 4                      params    137  test MSE 5.803e-02
+   GRU, hidden 16                     params   1121  test MSE 4.161e-02
+   GRU, hidden 64                     params  13697  test MSE 6.414e-02
+   LSTM, hidden 64                    params  18241  test MSE 5.071e-02
+   Self-attention, width 32           params   7777  test MSE 5.887e-02
+   1D-CNN on action embeddings        params    979  test MSE 1.222e-01
+   OpQ, d=2                           params     28  test MSE 7.995e-02
+   OpQ, d=4                           params    112  test MSE 4.499e-02
+   OpQ, d=6                           params    252  test MSE 1.236e-02
+   OpQ, d=8                           params    448  test MSE 5.169e-03
+   OpQ, d=10                          params    700  test MSE 1.686e-03
+   OpQ, d=12                          params   1008  test MSE 9.735e-15
+   (history table: 46656 entries; fit time 1404s)

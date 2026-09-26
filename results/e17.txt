@@ -1,0 +1,14 @@
+[Thm 1] conjugation: max |tau(rho Q^pi) - exact expected return| = 6.66e-16
+[Thm 1] multiplicative: max |tau(rho Q^pi) - exact expected return| = 3.61e-16
+[Thm 3] beta=   1.0: certificate violations 0/30, mean slack 1.885, min eig(Q_beta - Q^pi) = 2.46e+00
+[Thm 3] beta=   5.0: certificate violations 0/30, mean slack 1.241, min eig(Q_beta - Q^pi) = 1.87e+00
+[Thm 3] beta=  20.0: certificate violations 0/30, mean slack 1.386, min eig(Q_beta - Q^pi) = 1.96e+00
+[Thm 3] beta=  50.0: certificate violations 0/30, mean slack 1.605, min eig(Q_beta - Q^pi) = 1.77e+00
+[Prop 2] commuting, pure eigenstates, beta=200: max slack 4.75e-12  (<= gamma*log K/beta*H scale 2.20e-02)
+[Thm 4] r(a,b,c)=-1.1427, r(b,a,c)=-0.8068, lower bound on any order-blind scalar Q: 0.1680
+[Thm 6] Hankel block (40, 40), numerical rank 9 (N^2 = 9)
+[Thm 2] operator TD, step   1000: max_(s,a) ||Q-Q^pi||_op = 1.6911
+[Thm 2] operator TD, step  10000: max_(s,a) ||Q-Q^pi||_op = 0.8428
+[Thm 2] operator TD, step 100000: max_(s,a) ||Q-Q^pi||_op = 0.3414
+[Thm 2] operator TD, step 400000: max_(s,a) ||Q-Q^pi||_op = 0.1428
+[Thm 3] context: mean |q*| over 30 random (s,rho,a) = 3.453

@@ -1,0 +1,17 @@
+[se3] N=4 K=6 T=8  Var(test returns) = 1.2821
+   planted-solution check: test MSE 1.06e-31
+   S(T), T=2..10: 1.5, 2.84, 5.67, 8.52, 13.9, 19.9, 30, 42.8, 61.9
+   marked-point swap gap (largest pair): 1.9996
+   Scalar order-blind (t, a_t)        params     41  test MSE 8.610e-01
+   Windowed table (t, a_{t-1}, a_t)   params    216  test MSE 7.301e-01
+   GRU, hidden 4                      params    137  test MSE 3.627e-01
+   GRU, hidden 16                     params   1121  test MSE 1.056e-01
+   GRU, hidden 64                     params  13697  test MSE 9.180e-02
+   LSTM, hidden 64                    params  18241  test MSE 1.072e-01
+   Self-attention, width 32           params   7841  test MSE 3.655e-01
+   1D-CNN on action embeddings        params    979  test MSE 5.783e-01
+   OpQ, d=1                           params      7  test MSE 1.108e+00
+   OpQ, d=2                           params     28  test MSE 7.734e-01
+   OpQ, d=3                           params     63  test MSE 3.609e-01
+   OpQ, d=4                           params    112  test MSE 2.193e-31
+   (history table: 1679616 entries; fit time 617s)

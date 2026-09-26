@@ -1,0 +1,2 @@
+N=1: exact recursion  max off-diagonal 0.0e+00, max |diag - scalar soft Q| 3.6e-15; sample-based (20k updates) max deviation from scalar soft Q-learning 3.6e-15
+N=4: exact recursion  max off-diagonal 0.0e+00, max |diag - scalar soft Q| 1.2e-14; sample-based (20k updates) max deviation from scalar soft Q-learning 1.6e-14

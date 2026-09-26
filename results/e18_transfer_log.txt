@@ -1,0 +1,72 @@
+   opq_soft   seed 0: training rho_0 0.837   held-out rho_0 0.955
+   opq_soft   seed 1: training rho_0 0.853   held-out rho_0 0.953
+   opq_soft   seed 2: training rho_0 0.837   held-out rho_0 0.955
+   opq_soft   seed 3: training rho_0 0.838   held-out rho_0 0.952
+   opq_soft   seed 4: training rho_0 0.837   held-out rho_0 0.956
+== random_oldp opq_soft   training rho_0 0.840 +- 0.007   held-out 0.954 +- 0.001
+   opq_pi     seed 0: training rho_0 0.861   held-out rho_0 0.969
+   opq_pi     seed 1: training rho_0 0.861   held-out rho_0 0.966
+   opq_pi     seed 2: training rho_0 0.860   held-out rho_0 0.972
+   opq_pi     seed 3: training rho_0 0.860   held-out rho_0 0.976
+   opq_pi     seed 4: training rho_0 0.860   held-out rho_0 0.971
+== random_oldp opq_pi     training rho_0 0.860 +- 0.000   held-out 0.971 +- 0.003
+   dqn        seed 0: training rho_0 0.997   held-out rho_0 0.906
+   dqn        seed 1: training rho_0 0.998   held-out rho_0 0.868
+   dqn        seed 2: training rho_0 1.000   held-out rho_0 0.821
+   dqn        seed 3: training rho_0 1.000   held-out rho_0 0.840
+   dqn        seed 4: training rho_0 1.000   held-out rho_0 0.921
+== random_oldp dqn        training rho_0 0.999 +- 0.001   held-out 0.871 +- 0.038
+   drqn       seed 0: training rho_0 0.997   held-out rho_0 0.544
+   drqn       seed 1: training rho_0 0.997   held-out rho_0 0.528
+   drqn       seed 2: training rho_0 0.998   held-out rho_0 0.478
+   drqn       seed 3: training rho_0 1.000   held-out rho_0 0.521
+   drqn       seed 4: training rho_0 0.999   held-out rho_0 0.565
+== random_oldp drqn       training rho_0 0.998 +- 0.001   held-out 0.527 +- 0.029
+   opq_soft   seed 0: training rho_0 0.985   held-out rho_0 0.985
+   opq_soft   seed 1: training rho_0 0.980   held-out rho_0 0.986
+   opq_soft   seed 2: training rho_0 0.978   held-out rho_0 0.986
+   opq_soft   seed 3: training rho_0 0.977   held-out rho_0 0.984
+   opq_soft   seed 4: training rho_0 0.984   held-out rho_0 0.987
+== pointing opq_soft   training rho_0 0.981 +- 0.003   held-out 0.986 +- 0.001
+   opq_pi     seed 0: training rho_0 0.873   held-out rho_0 0.978
+   opq_pi     seed 1: training rho_0 0.922   held-out rho_0 0.977
+   opq_pi     seed 2: training rho_0 0.878   held-out rho_0 0.976
+   opq_pi     seed 3: training rho_0 0.972   held-out rho_0 0.979
+   opq_pi     seed 4: training rho_0 0.920   held-out rho_0 0.976
+== pointing opq_pi     training rho_0 0.913 +- 0.036   held-out 0.977 +- 0.001
+   dqn        seed 0: training rho_0 0.988   held-out rho_0 0.955
+   dqn        seed 1: training rho_0 0.986   held-out rho_0 0.953
+   dqn        seed 2: training rho_0 0.992   held-out rho_0 0.958
+   dqn        seed 3: training rho_0 0.983   held-out rho_0 0.945
+   dqn        seed 4: training rho_0 0.987   held-out rho_0 0.983
+== pointing dqn        training rho_0 0.987 +- 0.003   held-out 0.959 +- 0.013
+   drqn       seed 0: training rho_0 0.972   held-out rho_0 0.171
+   drqn       seed 1: training rho_0 0.953   held-out rho_0 0.214
+   drqn       seed 2: training rho_0 0.973   held-out rho_0 0.228
+   drqn       seed 3: training rho_0 0.980   held-out rho_0 0.156
+   drqn       seed 4: training rho_0 0.978   held-out rho_0 0.291
+== pointing drqn       training rho_0 0.971 +- 0.009   held-out 0.212 +- 0.048
+   opq_soft   seed 0: training rho_0 0.790   held-out rho_0 0.690
+   opq_soft   seed 1: training rho_0 0.790   held-out rho_0 0.680
+   opq_soft   seed 2: training rho_0 1.000   held-out rho_0 0.664
+   opq_soft   seed 3: training rho_0 0.790   held-out rho_0 0.683
+   opq_soft   seed 4: training rho_0 0.790   held-out rho_0 0.680
+== qubit_prep opq_soft   training rho_0 0.832 +- 0.084   held-out 0.679 +- 0.008
+   opq_pi     seed 0: training rho_0 0.283   held-out rho_0 0.703
+   opq_pi     seed 1: training rho_0 0.283   held-out rho_0 0.703
+   opq_pi     seed 2: training rho_0 0.283   held-out rho_0 0.703
+   opq_pi     seed 3: training rho_0 0.283   held-out rho_0 0.703
+   opq_pi     seed 4: training rho_0 0.283   held-out rho_0 0.703
+== qubit_prep opq_pi     training rho_0 0.283 +- 0.000   held-out 0.703 +- 0.000
+   dqn        seed 0: training rho_0 1.000   held-out rho_0 0.390
+   dqn        seed 1: training rho_0 1.000   held-out rho_0 0.617
+   dqn        seed 2: training rho_0 1.000   held-out rho_0 0.486
+   dqn        seed 3: training rho_0 1.000   held-out rho_0 0.447
+   dqn        seed 4: training rho_0 1.000   held-out rho_0 0.519
+== qubit_prep dqn        training rho_0 1.000 +- 0.000   held-out 0.492 +- 0.076
+   drqn       seed 0: training rho_0 1.000   held-out rho_0 0.103
+   drqn       seed 1: training rho_0 0.790   held-out rho_0 0.047
+   drqn       seed 2: training rho_0 1.000   held-out rho_0 0.113
+   drqn       seed 3: training rho_0 1.000   held-out rho_0 0.074
+   drqn       seed 4: training rho_0 1.000   held-out rho_0 0.191
+== qubit_prep drqn       training rho_0 0.958 +- 0.084   held-out 0.106 +- 0.049

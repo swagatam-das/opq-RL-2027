@@ -1,0 +1,8 @@
+(1) noisy random channels, Thm 1: max |q_pi - tau(rho Q_pi)| = 3.89e-16
+(1) noisy random channels, Thm 3, beta=2: 0/20 violations, mean slack 0.690
+(1) noisy random channels, Thm 3, beta=10: 0/20 violations, mean slack 0.547
+(2) Cor 2, min over (s,a,rho) of [truncated certificate + tail - q_pi] by n: n=5: +25.151, n=10: +21.264, n=20: +17.732, n=40: +16.028, n=60: +15.873
+(3) Prop 6, eps=0.05: min [V_greedy(Q_hat) - (V_pi - 2 eps/(1-gamma))] = +1.124 (>= 0 required)
+(4) Prop 8: reducible unitary rep, N=4, blocks n=(2,1), m=(1,2): Hankel rank 5 (dim of algebra = 5); bounds sqrt(5)=2.24 <= d_min <= 3 < N = 4
+(4) Prop 8: irreducible (generic) unitary rep, N=3: Hankel rank 9 (= N^2)
+(4) Prop 8: explicit d=3 model reproduces all 243 words of length 5 to 1.8e-15

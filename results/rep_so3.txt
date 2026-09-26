@@ -1,0 +1,15 @@
+[so3] N=3 K=6 T=8  Var(test returns) = 0.4117
+   planted-solution check: test MSE 2.15e-32
+   S(T), T=2..10: 0.233, 0.374, 0.458, 0.508, 0.538, 0.556, 0.567, 0.574, 0.578
+   Scalar order-blind (t, a_t)        params     41  test MSE 3.029e-01
+   Windowed table (t, a_{t-1}, a_t)   params    216  test MSE 2.768e-01
+   GRU, hidden 4                      params    137  test MSE 6.218e-02
+   GRU, hidden 16                     params   1121  test MSE 1.023e-02
+   GRU, hidden 64                     params  13697  test MSE 4.625e-03
+   LSTM, hidden 64                    params  18241  test MSE 3.248e-03
+   Self-attention, width 32           params   7841  test MSE 9.585e-02
+   1D-CNN on action embeddings        params    979  test MSE 2.018e-01
+   OpQ, d=1                           params      7  test MSE 3.607e-01
+   OpQ, d=2                           params     28  test MSE 1.645e-01
+   OpQ, d=3                           params     63  test MSE 6.031e-32
+   (history table: 1679616 entries; fit time 529s)

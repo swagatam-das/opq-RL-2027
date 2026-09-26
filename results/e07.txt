@@ -1,0 +1,5 @@
+(i)   commuting sector, 20000 configurations: largest op-norm ratio = 1.000000
+(ii)  K=N=25, beta=5: max-aggregated HS ratio 4.3040 (predicted p*sqrt(N) = 4.3040; bound 1+beta/4 = 2.25); l2-aggregated ratio 0.8608
+(iii) non-commuting, beta= 1: largest local op-norm ratio over 80 draws = 0.970
+(iii) non-commuting, beta= 5: largest local op-norm ratio over 80 draws = 1.171
+(iii) non-commuting, beta=10: largest local op-norm ratio over 80 draws = 1.477

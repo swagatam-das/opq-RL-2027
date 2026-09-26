@@ -1,0 +1,86 @@
+{
+ "env": "boson",
+ "N": 12,
+ "K": 6,
+ "T": 6,
+ "var_test": 0.11672145912684764,
+ "table_entries": 46656,
+ "models": {
+  "Scalar order-blind (t, a_t)": {
+   "params": 31,
+   "test_mse": 0.11558716243978949
+  },
+  "Windowed table (t, a_{t-1}, a_t)": {
+   "params": 156,
+   "test_mse": 0.11534992177130601
+  },
+  "GRU, hidden 4": {
+   "train_mse": 0.05049545826096356,
+   "test_mse": 0.05802938345579137,
+   "params": 137
+  },
+  "GRU, hidden 16": {
+   "train_mse": 0.014078747471076692,
+   "test_mse": 0.04160644637377908,
+   "params": 1121
+  },
+  "GRU, hidden 64": {
+   "train_mse": 9.715537014669239e-05,
+   "test_mse": 0.06413785631585929,
+   "params": 13697
+  },
+  "LSTM, hidden 64": {
+   "train_mse": 2.9950471441821233e-05,
+   "test_mse": 0.05070966809127222,
+   "params": 18241
+  },
+  "Self-attention, width 32": {
+   "train_mse": 0.03225849912945149,
+   "test_mse": 0.05886617723076303,
+   "params": 7777
+  },
+  "1D-CNN on action embeddings": {
+   "train_mse": 0.06413582705587548,
+   "test_mse": 0.12224852316149458,
+   "params": 979
+  },
+  "OpQ, d=2": {
+   "train_mse": 0.0752242319793175,
+   "test_mse": 0.07994931669161917,
+   "params": 28
+  },
+  "OpQ, d=4": {
+   "train_mse": 0.04052245337149757,
+   "test_mse": 0.04499232529485287,
+   "params": 112
+  },
+  "OpQ, d=6": {
+   "train_mse": 0.011362218775004863,
+   "test_mse": 0.012358623343847373,
+   "params": 252
+  },
+  "OpQ, d=8": {
+   "train_mse": 0.0037340470098607336,
+   "test_mse": 0.005168804337335981,
+   "params": 448
+  },
+  "OpQ, d=10": {
+   "train_mse": 0.0009534606200157284,
+   "test_mse": 0.00168617956496823,
+   "params": 700
+  },
+  "OpQ, d=12": {
+   "train_mse": 4.940626774863901e-15,
+   "test_mse": 9.735144236857011e-15,
+   "params": 1008
+  }
+ },
+ "planted_mse": 2.075224494120299e-32,
+ "S10_by_truncation": {
+  "6": 29902.156646686377,
+  "12": 1069242.4261737005,
+  "24": 23547332.64932871
+ },
+ "swap_phase_truncated": -0.35960199144718274,
+ "swap_phase_exact": -0.35960378802468873
+}
