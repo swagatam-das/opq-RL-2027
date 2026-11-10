@@ -1,0 +1,57 @@
+random_oldp {'V_blind': 3.913410072566339, 'V_rand': -0.02698739856770839, 'V_oracle_aware': 5.842591117521435, 'oracle_score': 1.4895904687503208, 'opq_exact_model_score': 0.9568714297312315, 'blind_planner_decision_ms': 2.433300018310547, 'belief_purity': 0.4940423276644845, 'linearity_check': {'exact': 3.7434663633456564, 'mc_mean': 3.774961179332922, 'mc_se': 0.08069720014640845}}
+pointing {'V_blind': 4.196988646674219, 'V_rand': 2.682968316291347, 'V_oracle_aware': 6.193585294016408, 'oracle_score': 2.3187383334788385, 'opq_exact_model_score': 0.9884972052563764, 'blind_planner_decision_ms': 940.5791759490967, 'belief_purity': 0.49561691806582253, 'linearity_check': {'exact': 4.179573181576152, 'mc_mean': 4.22352755271645, 'mc_se': 0.08303414997144923}}
+qubit_prep {'V_blind': 0.4723183208734658, 'V_rand': 0.26565987189640017, 'V_oracle_aware': 0.9414968673985582, 'oracle_score': 3.2703090478394157, 'opq_exact_model_score': 0.7891127833606882, 'blind_planner_decision_ms': 736.7720603942871, 'belief_purity': 0.3159342961503061, 'linearity_check': {'exact': 0.4287366957736952, 'mc_mean': 0.4372083098549519, 'mc_se': 0.011413029993805822}}
+random_oldp OpQ-soft (learned R) 1 [0.359, 0.585, 0.957, 0.955] 0.21ms 7s
+random_oldp OpQ-soft (learned R) 0 [-0.057, 0.853, 0.888, 0.956] 0.01ms 7s
+random_oldp OpQ-soft (known R) 0 [0.724, 0.957, 0.958, 0.958] 0.01ms 5s
+random_oldp OpQ-soft (learned R) 2 [0.592, 0.974, 0.958, 0.958] 0.01ms 7s
+random_oldp OpQ-soft (known R) 1 [0.875, 0.958, 0.957, 0.957] 0.01ms 5s
+random_oldp OpQ-soft (known R) 2 [0.914, 0.958, 0.958, 0.957] 0.01ms 5s
+random_oldp DQN on belief mean 0 [0.874, 0.971, 0.976, 0.996] 0.07ms 13s
+random_oldp DQN on belief mean 1 [0.853, 0.922, 0.947, 0.957] 0.24ms 13s
+random_oldp History table 0 [0.289, 0.489, 0.758, 0.954] 0.00ms 2s
+random_oldp History table 1 [0.62, 0.71, 0.892, 0.977] 0.00ms 2s
+random_oldp History table 2 [0.545, 0.53, 0.802, 0.982] 0.00ms 2s
+random_oldp DQN on belief mean 2 [0.823, 0.887, 0.964, 0.971] 0.28ms 13s
+random_oldp OpQ-soft (known R), plug-in 0 [0.724, 0.958, 0.957, 0.958] 0.01ms 6s
+random_oldp OpQ-soft (known R), plug-in 1 [0.875, 0.956, 0.957, 0.957] 0.01ms 5s
+random_oldp OpQ-soft (known R), plug-in 2 [0.914, 0.958, 0.957, 0.958] 0.01ms 5s
+random_oldp DQN, plug-in 1 [0.909, 0.869, 0.919, 0.913] 0.08ms 9s
+random_oldp DQN, plug-in 0 [0.935, 0.96, 0.608, 0.735] 1.02ms 10s
+random_oldp DQN, plug-in 2 [0.734, 0.744, 0.955, 0.916] 0.07ms 15s
+pointing OpQ-soft (learned R) 0 [-0.067, 0.247, 0.912, 0.971] 0.01ms 13s
+pointing OpQ-soft (learned R) 1 [-0.157, 0.106, 0.844, 0.98] 0.01ms 11s
+pointing OpQ-soft (learned R) 2 [0.444, 0.483, 0.928, 0.974] 0.01ms 11s
+pointing OpQ-soft (known R) 0 [0.974, 0.982, 0.983, 0.984] 0.01ms 9s
+pointing OpQ-soft (known R) 1 [0.965, 0.975, 0.979, 0.985] 0.01ms 9s
+pointing OpQ-soft (known R) 2 [0.972, 0.981, 0.983, 0.983] 0.01ms 9s
+pointing DQN on belief mean 0 [0.733, 0.69, 0.878, 0.904] 0.07ms 15s
+pointing DQN on belief mean 1 [0.315, 0.82, 0.921, 0.963] 0.07ms 15s
+pointing History table 0 [0.363, 0.362, 0.351, 0.699] 0.00ms 2s
+pointing DQN on belief mean 2 [0.861, 0.911, 0.904, 0.858] 0.17ms 16s
+pointing History table 1 [0.215, 0.4, 0.534, 0.72] 0.00ms 2s
+pointing History table 2 [0.369, 0.342, 0.524, 0.736] 0.00ms 2s
+pointing OpQ-soft (known R), plug-in 0 [0.978, 0.983, 0.984, 0.985] 0.01ms 8s
+pointing OpQ-soft (known R), plug-in 1 [0.952, 0.975, 0.988, 0.982] 0.02ms 8s
+pointing OpQ-soft (known R), plug-in 2 [0.935, 0.996, 0.98, 0.98] 0.01ms 10s
+pointing DQN, plug-in 0 [0.571, 0.912, 0.956, 0.953] 0.07ms 18s
+pointing DQN, plug-in 1 [0.718, 0.771, 0.843, 0.937] 0.08ms 16s
+pointing DQN, plug-in 2 [0.687, 0.751, 0.895, 0.946] 0.58ms 13s
+qubit_prep OpQ-soft (learned R) 0 [-0.26, 0.17, 0.186, 0.29] 0.01ms 15s
+qubit_prep OpQ-soft (learned R) 1 [0.612, 0.17, -0.075, 0.789] 0.01ms 14s
+qubit_prep OpQ-soft (learned R) 2 [-0.024, 0.18, 0.789, 0.29] 0.01ms 14s
+qubit_prep OpQ-soft (known R) 0 [0.622, 0.789, 0.789, 0.789] 0.01ms 10s
+qubit_prep OpQ-soft (known R) 1 [0.167, 0.292, 0.789, 0.789] 0.01ms 9s
+qubit_prep OpQ-soft (known R) 2 [0.787, 0.789, 0.795, 0.784] 0.01ms 9s
+qubit_prep DQN on belief mean 0 [0.291, 0.184, 1.0, 1.0] 0.09ms 19s
+qubit_prep DQN on belief mean 1 [-0.255, 0.79, 0.79, 1.0] 0.19ms 18s
+qubit_prep History table 0 [0.28, 0.28, 0.28, 0.28] 0.00ms 2s
+qubit_prep History table 1 [0.28, 0.28, 0.28, 0.28] 0.00ms 2s
+qubit_prep History table 2 [0.28, 0.28, 0.28, 0.28] 0.00ms 2s
+qubit_prep DQN on belief mean 2 [-0.222, -0.319, 1.0, 1.0] 0.09ms 18s
+qubit_prep OpQ-soft (known R), plug-in 0 [0.19, 1.0, 0.789, 0.789] 0.01ms 9s
+qubit_prep OpQ-soft (known R), plug-in 1 [0.167, 1.0, 0.789, 0.789] 0.01ms 9s
+qubit_prep OpQ-soft (known R), plug-in 2 [0.787, 0.795, 0.789, 0.789] 0.02ms 11s
+qubit_prep DQN, plug-in 0 [-0.248, -0.071, -0.076, 0.273] 0.11ms 21s
+qubit_prep DQN, plug-in 1 [-0.081, 0.616, 0.273, 0.28] 0.17ms 18s
+qubit_prep DQN, plug-in 2 [-0.076, -0.069, -0.077, 0.789] 0.10ms 15s

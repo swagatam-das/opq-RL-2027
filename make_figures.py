@@ -259,14 +259,14 @@ def overview():
     box(0.415, Y(0.50), 0.24, 0.30 * S, "histories $(V,D)$ and $(D,V)$\nboth observed as\n"
         "$\\sigma=\\{V{:}1,D{:}1\\}$, action $H$", "0.4")
     box(0.415, Y(0.08), 0.24, 0.30 * S, "one number $f(\\sigma,H)$ for both;\n"
-        "targets $+1$ and $-1$\n$\\Rightarrow$ error $\\geq 1$ (Thm. 4)", "0.4")
+        "targets $+1$ and $-1$\n$\\Rightarrow$ error $\\geq 1$ (Prop. 8)", "0.4")
     arrow((0.535, Y(0.49)), (0.535, Y(0.39)))
     # ---- (c)
     fig.text(0.845, Y(0.97), "(c) operator $Q$, compositional backup", fontsize=7.5, ha="center", va="top", weight="bold")
     box(0.705, Y(0.50), 0.285, 0.30 * S, "$Q(s,a)=\\mathcal{K}_a^{\\dagger}(R+\\gamma\\,\\mathbb{E}V)$\n"
         "unrolls to $A_{a_1}\\cdots A_{a_T}W$ (Cor. 1)\none $N{\\times}N$ operator per $(s,a)$", "C3")
     box(0.705, Y(0.08), 0.285, 0.30 * S, "value $=\\tau(X_h\\,Q(H))$, $Q(H)=A_HW$:\n"
-        "$X_{VD}=A_VA_D\\Rightarrow+1$,  $X_{DV}=A_DA_V\\Rightarrow-1$\nexact for every history (Thm. 1)", "C3")
+        "$X_{VD}=A_VA_D\\Rightarrow+1$,  $X_{DV}=A_DA_V\\Rightarrow-1$\nexact for every history (Prop. 1)", "C3")
     arrow((0.8475, Y(0.49)), (0.8475, Y(0.39)), "C3")
     fig.add_artist(matplotlib.lines.Line2D([0.01, 0.99], [0.475, 0.475], transform=fig.transFigure,
                                            color="0.8", lw=0.6))
@@ -283,7 +283,7 @@ def overview():
     fig.text(0.31, 0.19, "readout at $X_0=I$: $\\tau(Q_0(V))=\\frac{1}{N}\\mathrm{Tr}(WA_VA_DA_H)=+1$;  "
              "after history $h$: $\\tau(X_h\\,Q_{|h|})$", fontsize=6.8, ha="center", va="center")
     fig.text(0.31, 0.105, "memory: $|\\mathcal{S}|K$ operators ($N^2$ numbers each), for every horizon\n"
-             "vs. $K^{T}$ entries for an exact history table (Thm. 5)", fontsize=6.8, ha="center", va="center",
+             "vs. $K^{T}$ entries for an exact history table (Prop. 9)", fontsize=6.8, ha="center", va="center",
              color="0.25")
     # ---- (e) Loewner picture of the soft certificate
     fig.text(0.815, 0.455, "(e) control: no operator max; LSE is an upper bound", fontsize=7.5, ha="center",
@@ -311,6 +311,29 @@ def overview():
     plt.close(fig)
 
 
+def e24():
+    """Fig. (E24): sup-norm distance of sampled OpQ-soft to the exact finite-horizon Q^beta."""
+    path = os.path.join(ROOT, "results", "e24", "e24_results.json")
+    if not os.path.exists(path):
+        return
+    d = json.load(open(path))
+    names = [("random_oldp", "C1 random OLDP"), ("pointing", "C2 $SO(3)$ pointing"), ("qubit_prep", "C3 two-qubit prep.")]
+    fig, axes = plt.subplots(1, 3, figsize=(7.0, 2.1), sharey=True)
+    for ax, (env, title) in zip(axes, names):
+        for rule, ls, lab in [("rm", "-", r"$\alpha_n=n^{-0.6}$ (Thm. 3)"), ("floor", "--", r"$\alpha_n=\max(0.02,n^{-0.6})$")]:
+            rs = [r for r in d["runs"] if r["env"] == env and r["rule"] == rule and not r["known_R"]]
+            ep = [c["episode"] for c in rs[0]["checkpoints"]]
+            em = np.array([[max(c["err_max"], 1e-10) for c in r["checkpoints"]] for r in rs])
+            ax.plot(ep, np.exp(np.log(em).mean(0)), ls, color="C0" if rule == "rm" else "C3", lw=1.3, label=lab)
+        ax.set_xscale("log"); ax.set_yscale("log"); ax.set_title(title, fontsize=8)
+        ax.set_xlabel("episodes", fontsize=7); ax.tick_params(labelsize=6); ax.grid(alpha=0.3, lw=0.4)
+    axes[0].set_ylabel(r"$\max\|Q_t-Q^\beta_t\|_{\mathrm{op}}/\max\|Q^\beta_t\|_{\mathrm{op}}$", fontsize=7)
+    axes[0].legend(fontsize=6, frameon=False, loc="lower left")
+    fig.tight_layout()
+    fig.savefig(os.path.join(FIG, "fig_e24_convergence.pdf"), bbox_inches="tight")
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     overview()
     origami()
@@ -319,4 +342,5 @@ if __name__ == "__main__":
     e18_refs()
     e10()
     rep()
+    e24()
     print("figures written to", FIG)

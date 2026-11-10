@@ -1,0 +1,2396 @@
+{
+ "beta": 5.0,
+ "episodes": 30000,
+ "checkpoints": [
+  30,
+  100,
+  300,
+  1000,
+  3000,
+  10000,
+  30000
+ ],
+ "runs": [
+  {
+   "env": "random_oldp",
+   "rule": "rm",
+   "known_R": false,
+   "seed": 0,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.5971369964584706,
+     "err_mean": 0.211752105078503,
+     "visited": 41,
+     "min_visits": 1.0,
+     "score": 0.7239517790970851,
+     "episode": 30
+    },
+    {
+     "err_max": 0.21853823106025907,
+     "err_mean": 0.07394652499691322,
+     "visited": 47,
+     "min_visits": 1.0,
+     "score": 0.9566977459618473,
+     "episode": 100
+    },
+    {
+     "err_max": 0.08148243546750437,
+     "err_mean": 0.019489710592331212,
+     "visited": 48,
+     "min_visits": 5.0,
+     "score": 0.9481831147833175,
+     "episode": 300
+    },
+    {
+     "err_max": 0.01783132121928264,
+     "err_mean": 0.005726090845511507,
+     "visited": 48,
+     "min_visits": 22.0,
+     "score": 0.9521182882015774,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.027575545638609006,
+     "err_mean": 0.0037008499219079918,
+     "visited": 48,
+     "min_visits": 84.0,
+     "score": 0.954937346769281,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.015018348144169065,
+     "err_mean": 0.002770355626215394,
+     "visited": 48,
+     "min_visits": 238.0,
+     "score": 0.9523823933280451,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.009865546227496283,
+     "err_mean": 0.0018492374256621087,
+     "visited": 48,
+     "min_visits": 320.0,
+     "score": 0.9523340971637144,
+     "episode": 30000
+    }
+   ],
+   "sec": 32.32184076309204
+  },
+  {
+   "env": "random_oldp",
+   "rule": "rm",
+   "known_R": false,
+   "seed": 1,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.8090687079339153,
+     "err_mean": 0.18557605226506058,
+     "visited": 36,
+     "min_visits": 1.0,
+     "score": 0.8530101931826082,
+     "episode": 30
+    },
+    {
+     "err_max": 0.33087660201833696,
+     "err_mean": 0.0591965105642701,
+     "visited": 47,
+     "min_visits": 1.0,
+     "score": 0.94831466848122,
+     "episode": 100
+    },
+    {
+     "err_max": 0.06450549905505083,
+     "err_mean": 0.011424324544375497,
+     "visited": 48,
+     "min_visits": 4.0,
+     "score": 0.9547924085425185,
+     "episode": 300
+    },
+    {
+     "err_max": 0.017526068946100558,
+     "err_mean": 0.005231647342801126,
+     "visited": 48,
+     "min_visits": 24.0,
+     "score": 0.9527385733509066,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.01186183229239116,
+     "err_mean": 0.003355093335951121,
+     "visited": 48,
+     "min_visits": 79.0,
+     "score": 0.9552506199682077,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.00917392919777418,
+     "err_mean": 0.002707892558828171,
+     "visited": 48,
+     "min_visits": 225.0,
+     "score": 0.9523210744939014,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.010828493785108324,
+     "err_mean": 0.0020710776301154014,
+     "visited": 48,
+     "min_visits": 318.0,
+     "score": 0.9523985753831505,
+     "episode": 30000
+    }
+   ],
+   "sec": 32.89942932128906
+  },
+  {
+   "env": "random_oldp",
+   "rule": "rm",
+   "known_R": true,
+   "seed": 0,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.5803384350380402,
+     "err_mean": 0.1342883663446211,
+     "visited": 41,
+     "min_visits": 1.0,
+     "score": 0.8180993023281569,
+     "episode": 30
+    },
+    {
+     "err_max": 0.14435160468933111,
+     "err_mean": 0.041377849529848784,
+     "visited": 47,
+     "min_visits": 1.0,
+     "score": 0.9476742683409476,
+     "episode": 100
+    },
+    {
+     "err_max": 0.04660204934111503,
+     "err_mean": 0.01139920329198567,
+     "visited": 48,
+     "min_visits": 5.0,
+     "score": 0.9504794515586599,
+     "episode": 300
+    },
+    {
+     "err_max": 0.016367488995403415,
+     "err_mean": 0.0045907735390099185,
+     "visited": 48,
+     "min_visits": 22.0,
+     "score": 0.9524232443842815,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.02725529505512883,
+     "err_mean": 0.003096354795581712,
+     "visited": 48,
+     "min_visits": 84.0,
+     "score": 0.9521181567434686,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.014637055380276582,
+     "err_mean": 0.0025049683466337024,
+     "visited": 48,
+     "min_visits": 237.0,
+     "score": 0.9523823933280451,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.00908540595331482,
+     "err_mean": 0.0016342334365680698,
+     "visited": 48,
+     "min_visits": 318.0,
+     "score": 0.9523340971637144,
+     "episode": 30000
+    }
+   ],
+   "sec": 26.047548532485962
+  },
+  {
+   "env": "random_oldp",
+   "rule": "rm",
+   "known_R": false,
+   "seed": 2,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.8502311497197176,
+     "err_mean": 0.1899242206472213,
+     "visited": 39,
+     "min_visits": 1.0,
+     "score": 0.778776308030031,
+     "episode": 30
+    },
+    {
+     "err_max": 0.2042049317116438,
+     "err_mean": 0.038844175005083796,
+     "visited": 46,
+     "min_visits": 2.0,
+     "score": 0.9388809018221463,
+     "episode": 100
+    },
+    {
+     "err_max": 0.03748369482849653,
+     "err_mean": 0.017246338554928294,
+     "visited": 48,
+     "min_visits": 2.0,
+     "score": 0.9556761961241201,
+     "episode": 300
+    },
+    {
+     "err_max": 0.021425927321884777,
+     "err_mean": 0.006053964665639122,
+     "visited": 48,
+     "min_visits": 24.0,
+     "score": 0.9531184056589778,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.01916445748048096,
+     "err_mean": 0.004381924671234023,
+     "visited": 48,
+     "min_visits": 87.0,
+     "score": 0.9529448189058893,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.010523866058656513,
+     "err_mean": 0.002371625290668211,
+     "visited": 48,
+     "min_visits": 240.0,
+     "score": 0.9521713304032295,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.008711921215171595,
+     "err_mean": 0.00155441666272379,
+     "visited": 48,
+     "min_visits": 326.0,
+     "score": 0.9523983199366566,
+     "episode": 30000
+    }
+   ],
+   "sec": 32.33627510070801
+  },
+  {
+   "env": "random_oldp",
+   "rule": "rm",
+   "known_R": true,
+   "seed": 1,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.7807016766153784,
+     "err_mean": 0.13569601977919474,
+     "visited": 36,
+     "min_visits": 1.0,
+     "score": 0.8702889301408092,
+     "episode": 30
+    },
+    {
+     "err_max": 0.12482005249369212,
+     "err_mean": 0.03421432750799185,
+     "visited": 47,
+     "min_visits": 1.0,
+     "score": 0.9504073569822834,
+     "episode": 100
+    },
+    {
+     "err_max": 0.05368415015455872,
+     "err_mean": 0.008102258537028268,
+     "visited": 48,
+     "min_visits": 4.0,
+     "score": 0.9549578773051886,
+     "episode": 300
+    },
+    {
+     "err_max": 0.01666855126247342,
+     "err_mean": 0.00438368322085178,
+     "visited": 48,
+     "min_visits": 24.0,
+     "score": 0.952750150530805,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.012710846182926483,
+     "err_mean": 0.002872290096504375,
+     "visited": 48,
+     "min_visits": 79.0,
+     "score": 0.9523340971637144,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.00836837363760253,
+     "err_mean": 0.002428914467622004,
+     "visited": 48,
+     "min_visits": 225.0,
+     "score": 0.9523483783937496,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.010039316543828307,
+     "err_mean": 0.0017164014723421057,
+     "visited": 48,
+     "min_visits": 317.0,
+     "score": 0.9523985753831505,
+     "episode": 30000
+    }
+   ],
+   "sec": 25.2157883644104
+  },
+  {
+   "env": "random_oldp",
+   "rule": "rm",
+   "known_R": true,
+   "seed": 2,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.8016574833953652,
+     "err_mean": 0.1487668805998454,
+     "visited": 39,
+     "min_visits": 1.0,
+     "score": 0.807378706181809,
+     "episode": 30
+    },
+    {
+     "err_max": 0.1961566259180109,
+     "err_mean": 0.03647900294350036,
+     "visited": 46,
+     "min_visits": 2.0,
+     "score": 0.9420414828419783,
+     "episode": 100
+    },
+    {
+     "err_max": 0.03895947772743606,
+     "err_mean": 0.014814559384035857,
+     "visited": 48,
+     "min_visits": 2.0,
+     "score": 0.9537785157589393,
+     "episode": 300
+    },
+    {
+     "err_max": 0.019911393026936647,
+     "err_mean": 0.004089532314785209,
+     "visited": 48,
+     "min_visits": 24.0,
+     "score": 0.9533189914762314,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.019245918392714386,
+     "err_mean": 0.0038444830446881847,
+     "visited": 48,
+     "min_visits": 87.0,
+     "score": 0.9529448189058893,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.010736933696702516,
+     "err_mean": 0.0020693074709614667,
+     "visited": 48,
+     "min_visits": 240.0,
+     "score": 0.9521211334138288,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.008294028840811284,
+     "err_mean": 0.0013683597684091822,
+     "visited": 48,
+     "min_visits": 326.0,
+     "score": 0.9523983199366566,
+     "episode": 30000
+    }
+   ],
+   "sec": 25.91941499710083
+  },
+  {
+   "env": "random_oldp",
+   "rule": "floor",
+   "known_R": false,
+   "seed": 0,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.5971369964584706,
+     "err_mean": 0.211752105078503,
+     "visited": 41,
+     "min_visits": 1.0,
+     "score": 0.7239517790970851,
+     "episode": 30
+    },
+    {
+     "err_max": 0.21853823106025907,
+     "err_mean": 0.07394652499691322,
+     "visited": 47,
+     "min_visits": 1.0,
+     "score": 0.9566977459618473,
+     "episode": 100
+    },
+    {
+     "err_max": 0.08148243546750437,
+     "err_mean": 0.019489710592331212,
+     "visited": 48,
+     "min_visits": 5.0,
+     "score": 0.9481831147833175,
+     "episode": 300
+    },
+    {
+     "err_max": 0.01783132121928264,
+     "err_mean": 0.005726090845511507,
+     "visited": 48,
+     "min_visits": 22.0,
+     "score": 0.9521182882015774,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.02757554147357629,
+     "err_mean": 0.0037002781665454476,
+     "visited": 48,
+     "min_visits": 84.0,
+     "score": 0.954937346769281,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.014945622693374827,
+     "err_mean": 0.0030021144138374645,
+     "visited": 48,
+     "min_visits": 238.0,
+     "score": 0.9523823933280451,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.010005772082173322,
+     "err_mean": 0.002453261441399216,
+     "visited": 48,
+     "min_visits": 320.0,
+     "score": 0.9521181567434686,
+     "episode": 30000
+    }
+   ],
+   "sec": 33.95003890991211
+  },
+  {
+   "env": "random_oldp",
+   "rule": "floor",
+   "known_R": false,
+   "seed": 1,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.8090687079339153,
+     "err_mean": 0.18557605226506058,
+     "visited": 36,
+     "min_visits": 1.0,
+     "score": 0.8530101931826082,
+     "episode": 30
+    },
+    {
+     "err_max": 0.33087660201833696,
+     "err_mean": 0.0591965105642701,
+     "visited": 47,
+     "min_visits": 1.0,
+     "score": 0.94831466848122,
+     "episode": 100
+    },
+    {
+     "err_max": 0.06450549905505083,
+     "err_mean": 0.011424324544375497,
+     "visited": 48,
+     "min_visits": 4.0,
+     "score": 0.9547924085425185,
+     "episode": 300
+    },
+    {
+     "err_max": 0.017526068946100558,
+     "err_mean": 0.005231647342801126,
+     "visited": 48,
+     "min_visits": 24.0,
+     "score": 0.9527385733509066,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.011861625667085573,
+     "err_mean": 0.003357594815167082,
+     "visited": 48,
+     "min_visits": 79.0,
+     "score": 0.9552506199682077,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.009839335641653957,
+     "err_mean": 0.0029325865919584415,
+     "visited": 48,
+     "min_visits": 225.0,
+     "score": 0.95230704871036,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.009232233247377358,
+     "err_mean": 0.002492612881391709,
+     "visited": 48,
+     "min_visits": 317.0,
+     "score": 0.9521826349629047,
+     "episode": 30000
+    }
+   ],
+   "sec": 33.733843088150024
+  },
+  {
+   "env": "random_oldp",
+   "rule": "floor",
+   "known_R": true,
+   "seed": 0,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.5803384350380402,
+     "err_mean": 0.1342883663446211,
+     "visited": 41,
+     "min_visits": 1.0,
+     "score": 0.8180993023281569,
+     "episode": 30
+    },
+    {
+     "err_max": 0.14435160468933111,
+     "err_mean": 0.041377849529848784,
+     "visited": 47,
+     "min_visits": 1.0,
+     "score": 0.9476742683409476,
+     "episode": 100
+    },
+    {
+     "err_max": 0.04660204934111503,
+     "err_mean": 0.01139920329198567,
+     "visited": 48,
+     "min_visits": 5.0,
+     "score": 0.9504794515586599,
+     "episode": 300
+    },
+    {
+     "err_max": 0.016367488995403415,
+     "err_mean": 0.0045907735390099185,
+     "visited": 48,
+     "min_visits": 22.0,
+     "score": 0.9524232443842815,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.02725529505512883,
+     "err_mean": 0.003095948929839706,
+     "visited": 48,
+     "min_visits": 84.0,
+     "score": 0.9521181567434686,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.0145742194102674,
+     "err_mean": 0.0027759858934128623,
+     "visited": 48,
+     "min_visits": 237.0,
+     "score": 0.9523823933280451,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.009359882217491388,
+     "err_mean": 0.0021677736910222603,
+     "visited": 48,
+     "min_visits": 319.0,
+     "score": 0.9521181567434686,
+     "episode": 30000
+    }
+   ],
+   "sec": 25.144712686538696
+  },
+  {
+   "env": "random_oldp",
+   "rule": "floor",
+   "known_R": false,
+   "seed": 2,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.8502311497197176,
+     "err_mean": 0.1899242206472213,
+     "visited": 39,
+     "min_visits": 1.0,
+     "score": 0.778776308030031,
+     "episode": 30
+    },
+    {
+     "err_max": 0.2042049317116438,
+     "err_mean": 0.038844175005083796,
+     "visited": 46,
+     "min_visits": 2.0,
+     "score": 0.9388809018221463,
+     "episode": 100
+    },
+    {
+     "err_max": 0.03748369482849653,
+     "err_mean": 0.017246338554928294,
+     "visited": 48,
+     "min_visits": 2.0,
+     "score": 0.9556761961241201,
+     "episode": 300
+    },
+    {
+     "err_max": 0.021425927321884777,
+     "err_mean": 0.006053964665639122,
+     "visited": 48,
+     "min_visits": 24.0,
+     "score": 0.9531184056589778,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.019164457478157412,
+     "err_mean": 0.004381740379496807,
+     "visited": 48,
+     "min_visits": 87.0,
+     "score": 0.9529448189058893,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.010525252275118158,
+     "err_mean": 0.002598230664695111,
+     "visited": 48,
+     "min_visits": 240.0,
+     "score": 0.9521713304032295,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.008680955209203358,
+     "err_mean": 0.00224128469418905,
+     "visited": 48,
+     "min_visits": 327.0,
+     "score": 0.9521823795164108,
+     "episode": 30000
+    }
+   ],
+   "sec": 33.37794089317322
+  },
+  {
+   "env": "random_oldp",
+   "rule": "floor",
+   "known_R": true,
+   "seed": 1,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.7807016766153784,
+     "err_mean": 0.13569601977919474,
+     "visited": 36,
+     "min_visits": 1.0,
+     "score": 0.8702889301408092,
+     "episode": 30
+    },
+    {
+     "err_max": 0.12482005249369212,
+     "err_mean": 0.03421432750799185,
+     "visited": 47,
+     "min_visits": 1.0,
+     "score": 0.9504073569822834,
+     "episode": 100
+    },
+    {
+     "err_max": 0.05368415015455872,
+     "err_mean": 0.008102258537028268,
+     "visited": 48,
+     "min_visits": 4.0,
+     "score": 0.9549578773051886,
+     "episode": 300
+    },
+    {
+     "err_max": 0.01666855126247342,
+     "err_mean": 0.00438368322085178,
+     "visited": 48,
+     "min_visits": 24.0,
+     "score": 0.952750150530805,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.01271059247426954,
+     "err_mean": 0.002874771319450412,
+     "visited": 48,
+     "min_visits": 79.0,
+     "score": 0.9523340971637144,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.009856834757019527,
+     "err_mean": 0.00273320481653704,
+     "visited": 48,
+     "min_visits": 225.0,
+     "score": 0.9523483783937496,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.009041716885148068,
+     "err_mean": 0.002292819774717163,
+     "visited": 48,
+     "min_visits": 317.0,
+     "score": 0.9521823795164108,
+     "episode": 30000
+    }
+   ],
+   "sec": 27.215840339660645
+  },
+  {
+   "env": "random_oldp",
+   "rule": "floor",
+   "known_R": true,
+   "seed": 2,
+   "entries": 48,
+   "checkpoints": [
+    {
+     "err_max": 0.8016574833953652,
+     "err_mean": 0.1487668805998454,
+     "visited": 39,
+     "min_visits": 1.0,
+     "score": 0.807378706181809,
+     "episode": 30
+    },
+    {
+     "err_max": 0.1961566259180109,
+     "err_mean": 0.03647900294350036,
+     "visited": 46,
+     "min_visits": 2.0,
+     "score": 0.9420414828419783,
+     "episode": 100
+    },
+    {
+     "err_max": 0.03895947772743606,
+     "err_mean": 0.014814559384035857,
+     "visited": 48,
+     "min_visits": 2.0,
+     "score": 0.9537785157589393,
+     "episode": 300
+    },
+    {
+     "err_max": 0.019911393026936647,
+     "err_mean": 0.004089532314785209,
+     "visited": 48,
+     "min_visits": 24.0,
+     "score": 0.9533189914762314,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.019245918392714386,
+     "err_mean": 0.0038442956909970957,
+     "visited": 48,
+     "min_visits": 87.0,
+     "score": 0.9529448189058893,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.010736933696702516,
+     "err_mean": 0.0023972112543403997,
+     "visited": 48,
+     "min_visits": 240.0,
+     "score": 0.9521211334138288,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.008294028840811284,
+     "err_mean": 0.0020637116029271992,
+     "visited": 48,
+     "min_visits": 329.0,
+     "score": 0.9521823795164108,
+     "episode": 30000
+    }
+   ],
+   "sec": 27.333056449890137
+  },
+  {
+   "env": "pointing",
+   "rule": "rm",
+   "known_R": false,
+   "seed": 0,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7766653821837448,
+     "err_mean": 0.19991093253309988,
+     "visited": 76,
+     "min_visits": 1.0,
+     "score": 0.678335803532754,
+     "episode": 30
+    },
+    {
+     "err_max": 0.3124214119665321,
+     "err_mean": 0.06950237056140184,
+     "visited": 90,
+     "min_visits": 1.0,
+     "score": 0.9601768661648107,
+     "episode": 100
+    },
+    {
+     "err_max": 0.11510891207287476,
+     "err_mean": 0.017426298222580076,
+     "visited": 90,
+     "min_visits": 4.0,
+     "score": 0.9783185354979159,
+     "episode": 300
+    },
+    {
+     "err_max": 0.006463598047072966,
+     "err_mean": 0.0022182600440333244,
+     "visited": 90,
+     "min_visits": 19.0,
+     "score": 0.9862365879760024,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.0052682030076131245,
+     "err_mean": 0.0014569085244602838,
+     "visited": 90,
+     "min_visits": 73.0,
+     "score": 0.9864293387961315,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.0032679549119697155,
+     "err_mean": 0.0010496703357414706,
+     "visited": 90,
+     "min_visits": 251.0,
+     "score": 0.9861830429431714,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.0026411830998667543,
+     "err_mean": 0.0008139569622461477,
+     "visited": 90,
+     "min_visits": 503.0,
+     "score": 0.9858757133517699,
+     "episode": 30000
+    }
+   ],
+   "sec": 56.13170576095581
+  },
+  {
+   "env": "pointing",
+   "rule": "rm",
+   "known_R": false,
+   "seed": 1,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7286656485838402,
+     "err_mean": 0.22803321336712823,
+     "visited": 85,
+     "min_visits": 1.0,
+     "score": 0.7967540948791343,
+     "episode": 30
+    },
+    {
+     "err_max": 0.7286656485838402,
+     "err_mean": 0.09373048650091134,
+     "visited": 90,
+     "min_visits": 1.0,
+     "score": 0.9258106133517404,
+     "episode": 100
+    },
+    {
+     "err_max": 0.09131931843695454,
+     "err_mean": 0.02036859488432338,
+     "visited": 90,
+     "min_visits": 7.0,
+     "score": 0.9886768985851647,
+     "episode": 300
+    },
+    {
+     "err_max": 0.010944563244469525,
+     "err_mean": 0.0027128599750785944,
+     "visited": 90,
+     "min_visits": 26.0,
+     "score": 0.984451377424143,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.005247240365655967,
+     "err_mean": 0.0019411769189106723,
+     "visited": 90,
+     "min_visits": 93.0,
+     "score": 0.9851597485181288,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.003471112239659393,
+     "err_mean": 0.0010615724036084383,
+     "visited": 90,
+     "min_visits": 274.0,
+     "score": 0.9858008349946925,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.0024576875304423733,
+     "err_mean": 0.0007068837565578217,
+     "visited": 90,
+     "min_visits": 508.0,
+     "score": 0.985222860926561,
+     "episode": 30000
+    }
+   ],
+   "sec": 54.01839590072632
+  },
+  {
+   "env": "pointing",
+   "rule": "rm",
+   "known_R": true,
+   "seed": 0,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7289979131922527,
+     "err_mean": 0.16978825409018564,
+     "visited": 76,
+     "min_visits": 1.0,
+     "score": 0.7227678577119667,
+     "episode": 30
+    },
+    {
+     "err_max": 0.2802470515340986,
+     "err_mean": 0.05883024501033633,
+     "visited": 90,
+     "min_visits": 1.0,
+     "score": 0.9637567498124091,
+     "episode": 100
+    },
+    {
+     "err_max": 0.10599016343011153,
+     "err_mean": 0.014775067564337609,
+     "visited": 90,
+     "min_visits": 4.0,
+     "score": 0.9784039131652844,
+     "episode": 300
+    },
+    {
+     "err_max": 0.006021173511767587,
+     "err_mean": 0.0021250703794388026,
+     "visited": 90,
+     "min_visits": 19.0,
+     "score": 0.9862365879760024,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.005268245130179899,
+     "err_mean": 0.0014571250388083754,
+     "visited": 90,
+     "min_visits": 73.0,
+     "score": 0.9864293387961315,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.003267096988317889,
+     "err_mean": 0.0010496205128480405,
+     "visited": 90,
+     "min_visits": 251.0,
+     "score": 0.9861830429431714,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.002641182998641213,
+     "err_mean": 0.000813960610207289,
+     "visited": 90,
+     "min_visits": 503.0,
+     "score": 0.9858757133517699,
+     "episode": 30000
+    }
+   ],
+   "sec": 42.40200090408325
+  },
+  {
+   "env": "pointing",
+   "rule": "rm",
+   "known_R": false,
+   "seed": 2,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7881618254310779,
+     "err_mean": 0.1926629604056886,
+     "visited": 77,
+     "min_visits": 1.0,
+     "score": 0.8106827181413947,
+     "episode": 30
+    },
+    {
+     "err_max": 0.22129177601996264,
+     "err_mean": 0.06657970471623381,
+     "visited": 89,
+     "min_visits": 1.0,
+     "score": 0.9272225780775705,
+     "episode": 100
+    },
+    {
+     "err_max": 0.07226819337743244,
+     "err_mean": 0.017610987819917906,
+     "visited": 90,
+     "min_visits": 2.0,
+     "score": 0.9698710281738949,
+     "episode": 300
+    },
+    {
+     "err_max": 0.011084643176765312,
+     "err_mean": 0.0023056058589874437,
+     "visited": 90,
+     "min_visits": 29.0,
+     "score": 0.9868566493568116,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.0071018353952569824,
+     "err_mean": 0.0017046219263639197,
+     "visited": 90,
+     "min_visits": 93.0,
+     "score": 0.9850274987662784,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.0037335937596504817,
+     "err_mean": 0.0010736224834558556,
+     "visited": 90,
+     "min_visits": 276.0,
+     "score": 0.986265828757231,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.0028982597101748094,
+     "err_mean": 0.0008564423498569432,
+     "visited": 90,
+     "min_visits": 502.0,
+     "score": 0.9861087661935473,
+     "episode": 30000
+    }
+   ],
+   "sec": 52.586912870407104
+  },
+  {
+   "env": "pointing",
+   "rule": "rm",
+   "known_R": true,
+   "seed": 1,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7289979131922526,
+     "err_mean": 0.17353635973833925,
+     "visited": 85,
+     "min_visits": 1.0,
+     "score": 0.8173631338896823,
+     "episode": 30
+    },
+    {
+     "err_max": 0.7289979131922526,
+     "err_mean": 0.06549960825879256,
+     "visited": 90,
+     "min_visits": 1.0,
+     "score": 0.9463016510002062,
+     "episode": 100
+    },
+    {
+     "err_max": 0.058397041216672906,
+     "err_mean": 0.012259068361153232,
+     "visited": 90,
+     "min_visits": 7.0,
+     "score": 0.9884722489482829,
+     "episode": 300
+    },
+    {
+     "err_max": 0.008256080576198801,
+     "err_mean": 0.0023694077421186595,
+     "visited": 90,
+     "min_visits": 26.0,
+     "score": 0.9843213213600295,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.005243412309695805,
+     "err_mean": 0.0019407988840014659,
+     "visited": 90,
+     "min_visits": 93.0,
+     "score": 0.9851597485181288,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.0034711118444200953,
+     "err_mean": 0.0010615730629349451,
+     "visited": 90,
+     "min_visits": 274.0,
+     "score": 0.9858008349946925,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.002457687671278553,
+     "err_mean": 0.0007068844594805885,
+     "visited": 90,
+     "min_visits": 508.0,
+     "score": 0.985222860926561,
+     "episode": 30000
+    }
+   ],
+   "sec": 43.46902298927307
+  },
+  {
+   "env": "pointing",
+   "rule": "rm",
+   "known_R": true,
+   "seed": 2,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7289979131922529,
+     "err_mean": 0.15708641381819366,
+     "visited": 77,
+     "min_visits": 1.0,
+     "score": 0.856313289683457,
+     "episode": 30
+    },
+    {
+     "err_max": 0.18286744950701309,
+     "err_mean": 0.05047562384209123,
+     "visited": 89,
+     "min_visits": 1.0,
+     "score": 0.9477163089354711,
+     "episode": 100
+    },
+    {
+     "err_max": 0.055261896060081986,
+     "err_mean": 0.013205118634395335,
+     "visited": 90,
+     "min_visits": 2.0,
+     "score": 0.9703944008841101,
+     "episode": 300
+    },
+    {
+     "err_max": 0.009534696097925587,
+     "err_mean": 0.0021760853975020785,
+     "visited": 90,
+     "min_visits": 29.0,
+     "score": 0.9861555777731241,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.00708884450581822,
+     "err_mean": 0.0017050114734852991,
+     "visited": 90,
+     "min_visits": 93.0,
+     "score": 0.9850274987662784,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.0037335940914517444,
+     "err_mean": 0.0010736274456066355,
+     "visited": 90,
+     "min_visits": 276.0,
+     "score": 0.986265828757231,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.002898259624441135,
+     "err_mean": 0.0008564395251138798,
+     "visited": 90,
+     "min_visits": 502.0,
+     "score": 0.9861087661935473,
+     "episode": 30000
+    }
+   ],
+   "sec": 44.65599346160889
+  },
+  {
+   "env": "pointing",
+   "rule": "floor",
+   "known_R": false,
+   "seed": 0,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7766653821837448,
+     "err_mean": 0.19991093253309988,
+     "visited": 76,
+     "min_visits": 1.0,
+     "score": 0.678335803532754,
+     "episode": 30
+    },
+    {
+     "err_max": 0.3124214119665321,
+     "err_mean": 0.06950237056140184,
+     "visited": 90,
+     "min_visits": 1.0,
+     "score": 0.9601768661648107,
+     "episode": 100
+    },
+    {
+     "err_max": 0.11510891207287476,
+     "err_mean": 0.017426298222580076,
+     "visited": 90,
+     "min_visits": 4.0,
+     "score": 0.9783185354979159,
+     "episode": 300
+    },
+    {
+     "err_max": 0.006463598047072966,
+     "err_mean": 0.0022182600440333244,
+     "visited": 90,
+     "min_visits": 19.0,
+     "score": 0.9862365879760024,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.0052682030076131245,
+     "err_mean": 0.0014569085244602838,
+     "visited": 90,
+     "min_visits": 73.0,
+     "score": 0.9864293387961315,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.0038123384901229624,
+     "err_mean": 0.0011545494971085416,
+     "visited": 90,
+     "min_visits": 251.0,
+     "score": 0.9861830429431714,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.0040733654497382395,
+     "err_mean": 0.001154940729529595,
+     "visited": 90,
+     "min_visits": 504.0,
+     "score": 0.9835171369616593,
+     "episode": 30000
+    }
+   ],
+   "sec": 55.55398964881897
+  },
+  {
+   "env": "pointing",
+   "rule": "floor",
+   "known_R": false,
+   "seed": 1,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7286656485838402,
+     "err_mean": 0.22803321336712823,
+     "visited": 85,
+     "min_visits": 1.0,
+     "score": 0.7967540948791343,
+     "episode": 30
+    },
+    {
+     "err_max": 0.7286656485838402,
+     "err_mean": 0.09373048650091134,
+     "visited": 90,
+     "min_visits": 1.0,
+     "score": 0.9258106133517404,
+     "episode": 100
+    },
+    {
+     "err_max": 0.09131931843695454,
+     "err_mean": 0.02036859488432338,
+     "visited": 90,
+     "min_visits": 7.0,
+     "score": 0.9886768985851647,
+     "episode": 300
+    },
+    {
+     "err_max": 0.010944563244469525,
+     "err_mean": 0.0027128599750785944,
+     "visited": 90,
+     "min_visits": 26.0,
+     "score": 0.984451377424143,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.005247240365655967,
+     "err_mean": 0.0019411769189106723,
+     "visited": 90,
+     "min_visits": 93.0,
+     "score": 0.9851597485181288,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.0035655639388457085,
+     "err_mean": 0.0011462475175306294,
+     "visited": 90,
+     "min_visits": 274.0,
+     "score": 0.9858008349946925,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.003000888994310967,
+     "err_mean": 0.0009436222886807851,
+     "visited": 90,
+     "min_visits": 510.0,
+     "score": 0.985402101998234,
+     "episode": 30000
+    }
+   ],
+   "sec": 55.167937994003296
+  },
+  {
+   "env": "pointing",
+   "rule": "floor",
+   "known_R": true,
+   "seed": 0,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7289979131922527,
+     "err_mean": 0.16978825409018564,
+     "visited": 76,
+     "min_visits": 1.0,
+     "score": 0.7227678577119667,
+     "episode": 30
+    },
+    {
+     "err_max": 0.2802470515340986,
+     "err_mean": 0.05883024501033633,
+     "visited": 90,
+     "min_visits": 1.0,
+     "score": 0.9637567498124091,
+     "episode": 100
+    },
+    {
+     "err_max": 0.10599016343011153,
+     "err_mean": 0.014775067564337609,
+     "visited": 90,
+     "min_visits": 4.0,
+     "score": 0.9784039131652844,
+     "episode": 300
+    },
+    {
+     "err_max": 0.006021173511767587,
+     "err_mean": 0.0021250703794388026,
+     "visited": 90,
+     "min_visits": 19.0,
+     "score": 0.9862365879760024,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.005268245130179899,
+     "err_mean": 0.0014571250388083754,
+     "visited": 90,
+     "min_visits": 73.0,
+     "score": 0.9864293387961315,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.0038123388462717148,
+     "err_mean": 0.0011545141440234355,
+     "visited": 90,
+     "min_visits": 251.0,
+     "score": 0.9861830429431714,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.00407336538053105,
+     "err_mean": 0.001154940638083519,
+     "visited": 90,
+     "min_visits": 504.0,
+     "score": 0.9835171369616593,
+     "episode": 30000
+    }
+   ],
+   "sec": 44.85725235939026
+  },
+  {
+   "env": "pointing",
+   "rule": "floor",
+   "known_R": false,
+   "seed": 2,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7881618254310779,
+     "err_mean": 0.1926629604056886,
+     "visited": 77,
+     "min_visits": 1.0,
+     "score": 0.8106827181413947,
+     "episode": 30
+    },
+    {
+     "err_max": 0.22129177601996264,
+     "err_mean": 0.06657970471623381,
+     "visited": 89,
+     "min_visits": 1.0,
+     "score": 0.9272225780775705,
+     "episode": 100
+    },
+    {
+     "err_max": 0.07226819337743244,
+     "err_mean": 0.017610987819917906,
+     "visited": 90,
+     "min_visits": 2.0,
+     "score": 0.9698710281738949,
+     "episode": 300
+    },
+    {
+     "err_max": 0.011084643176765312,
+     "err_mean": 0.0023056058589874437,
+     "visited": 90,
+     "min_visits": 29.0,
+     "score": 0.9868566493568116,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.0071018353952569824,
+     "err_mean": 0.0017046219263639197,
+     "visited": 90,
+     "min_visits": 93.0,
+     "score": 0.9850274987662784,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.00373266317798629,
+     "err_mean": 0.001154180452070449,
+     "visited": 90,
+     "min_visits": 276.0,
+     "score": 0.9862873745072807,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.0037511166105668515,
+     "err_mean": 0.001162942162428982,
+     "visited": 90,
+     "min_visits": 502.0,
+     "score": 0.9861633318178479,
+     "episode": 30000
+    }
+   ],
+   "sec": 56.3127965927124
+  },
+  {
+   "env": "pointing",
+   "rule": "floor",
+   "known_R": true,
+   "seed": 1,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7289979131922526,
+     "err_mean": 0.17353635973833925,
+     "visited": 85,
+     "min_visits": 1.0,
+     "score": 0.8173631338896823,
+     "episode": 30
+    },
+    {
+     "err_max": 0.7289979131922526,
+     "err_mean": 0.06549960825879256,
+     "visited": 90,
+     "min_visits": 1.0,
+     "score": 0.9463016510002062,
+     "episode": 100
+    },
+    {
+     "err_max": 0.058397041216672906,
+     "err_mean": 0.012259068361153232,
+     "visited": 90,
+     "min_visits": 7.0,
+     "score": 0.9884722489482829,
+     "episode": 300
+    },
+    {
+     "err_max": 0.008256080576198801,
+     "err_mean": 0.0023694077421186595,
+     "visited": 90,
+     "min_visits": 26.0,
+     "score": 0.9843213213600295,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.005243412309695805,
+     "err_mean": 0.0019407988840014659,
+     "visited": 90,
+     "min_visits": 93.0,
+     "score": 0.9851597485181288,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.0035655635220802917,
+     "err_mean": 0.0011462474600715826,
+     "visited": 90,
+     "min_visits": 274.0,
+     "score": 0.9858008349946925,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.003000888941135561,
+     "err_mean": 0.0009436222995012159,
+     "visited": 90,
+     "min_visits": 510.0,
+     "score": 0.985402101998234,
+     "episode": 30000
+    }
+   ],
+   "sec": 45.66945195198059
+  },
+  {
+   "env": "pointing",
+   "rule": "floor",
+   "known_R": true,
+   "seed": 2,
+   "entries": 90,
+   "checkpoints": [
+    {
+     "err_max": 0.7289979131922529,
+     "err_mean": 0.15708641381819366,
+     "visited": 77,
+     "min_visits": 1.0,
+     "score": 0.856313289683457,
+     "episode": 30
+    },
+    {
+     "err_max": 0.18286744950701309,
+     "err_mean": 0.05047562384209123,
+     "visited": 89,
+     "min_visits": 1.0,
+     "score": 0.9477163089354711,
+     "episode": 100
+    },
+    {
+     "err_max": 0.055261896060081986,
+     "err_mean": 0.013205118634395335,
+     "visited": 90,
+     "min_visits": 2.0,
+     "score": 0.9703944008841101,
+     "episode": 300
+    },
+    {
+     "err_max": 0.009534696097925587,
+     "err_mean": 0.0021760853975020785,
+     "visited": 90,
+     "min_visits": 29.0,
+     "score": 0.9861555777731241,
+     "episode": 1000
+    },
+    {
+     "err_max": 0.00708884450581822,
+     "err_mean": 0.0017050114734852991,
+     "visited": 90,
+     "min_visits": 93.0,
+     "score": 0.9850274987662784,
+     "episode": 3000
+    },
+    {
+     "err_max": 0.003732663509269919,
+     "err_mean": 0.0011541804809423338,
+     "visited": 90,
+     "min_visits": 276.0,
+     "score": 0.9862873745072807,
+     "episode": 10000
+    },
+    {
+     "err_max": 0.0037511165328039464,
+     "err_mean": 0.0011629421454411152,
+     "visited": 90,
+     "min_visits": 502.0,
+     "score": 0.9861633318178479,
+     "episode": 30000
+    }
+   ],
+   "sec": 47.03029227256775
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "rm",
+   "known_R": false,
+   "seed": 0,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5903335214682128,
+     "err_mean": 0.3082183753762571,
+     "visited": 40,
+     "min_visits": 1.0,
+     "score": 0.3620421172056499,
+     "episode": 30
+    },
+    {
+     "err_max": 0.2999694707006506,
+     "err_mean": 0.16750423107352602,
+     "visited": 40,
+     "min_visits": 12.0,
+     "score": 0.5686508223763311,
+     "episode": 100
+    },
+    {
+     "err_max": 0.12848408893064078,
+     "err_mean": 0.04523462914346816,
+     "visited": 40,
+     "min_visits": 45.0,
+     "score": 0.6446345022919462,
+     "episode": 300
+    },
+    {
+     "err_max": 0.005512468830915245,
+     "err_mean": 0.000940811011396084,
+     "visited": 40,
+     "min_visits": 178.0,
+     "score": 0.6397185113311217,
+     "episode": 1000
+    },
+    {
+     "err_max": 2.9320117852724625e-06,
+     "err_mean": 3.7346008809582157e-07,
+     "visited": 40,
+     "min_visits": 554.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 2.812094178125292e-09,
+     "err_mean": 2.2908733785233918e-09,
+     "visited": 40,
+     "min_visits": 1435.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 1.6332723405584858e-09,
+     "err_mean": 1.0182173300013927e-09,
+     "visited": 40,
+     "min_visits": 1957.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 75.92578625679016
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "rm",
+   "known_R": false,
+   "seed": 1,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5062138392983156,
+     "err_mean": 0.2992033597134186,
+     "visited": 40,
+     "min_visits": 1.0,
+     "score": 0.37981124316405307,
+     "episode": 30
+    },
+    {
+     "err_max": 0.2862676724769032,
+     "err_mean": 0.15722598457686848,
+     "visited": 40,
+     "min_visits": 13.0,
+     "score": 0.5388695450841858,
+     "episode": 100
+    },
+    {
+     "err_max": 0.11939749768600443,
+     "err_mean": 0.0403510795577648,
+     "visited": 40,
+     "min_visits": 48.0,
+     "score": 0.6443722972819961,
+     "episode": 300
+    },
+    {
+     "err_max": 0.004323548810433477,
+     "err_mean": 0.0008600256672541102,
+     "visited": 40,
+     "min_visits": 173.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 2.6171895764025655e-06,
+     "err_mean": 3.4407860042032363e-07,
+     "visited": 40,
+     "min_visits": 536.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 2.6706126911729706e-09,
+     "err_mean": 2.200949388189909e-09,
+     "visited": 40,
+     "min_visits": 1492.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 1.570416668619273e-09,
+     "err_mean": 9.994256897937557e-10,
+     "visited": 40,
+     "min_visits": 2018.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 75.09371948242188
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "rm",
+   "known_R": true,
+   "seed": 0,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5609463253664915,
+     "err_mean": 0.17182953387295963,
+     "visited": 40,
+     "min_visits": 1.0,
+     "score": 0.536808752189229,
+     "episode": 30
+    },
+    {
+     "err_max": 0.16871936837456922,
+     "err_mean": 0.04145495650714821,
+     "visited": 40,
+     "min_visits": 12.0,
+     "score": 0.6056790349582698,
+     "episode": 100
+    },
+    {
+     "err_max": 0.017887114553645594,
+     "err_mean": 0.0036277579144220126,
+     "visited": 40,
+     "min_visits": 45.0,
+     "score": 0.6849411214563986,
+     "episode": 300
+    },
+    {
+     "err_max": 0.00013448555766468393,
+     "err_mean": 1.8528544489029343e-05,
+     "visited": 40,
+     "min_visits": 178.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 2.400019678541209e-08,
+     "err_mean": 2.5670211440533473e-09,
+     "visited": 40,
+     "min_visits": 542.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 2.5547494005919952e-14,
+     "err_mean": 9.990020202107792e-15,
+     "visited": 40,
+     "min_visits": 1414.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 2.5554663637980184e-14,
+     "err_mean": 9.991748358044025e-15,
+     "visited": 40,
+     "min_visits": 1935.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 45.40349459648132
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "rm",
+   "known_R": false,
+   "seed": 2,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5323499520182747,
+     "err_mean": 0.30283527843248503,
+     "visited": 40,
+     "min_visits": 2.0,
+     "score": 0.3899113658328942,
+     "episode": 30
+    },
+    {
+     "err_max": 0.31600992619365464,
+     "err_mean": 0.15490675722539754,
+     "visited": 40,
+     "min_visits": 14.0,
+     "score": 0.48476320233797243,
+     "episode": 100
+    },
+    {
+     "err_max": 0.11856313991033289,
+     "err_mean": 0.03814494734394831,
+     "visited": 40,
+     "min_visits": 44.0,
+     "score": 0.6992782703662399,
+     "episode": 300
+    },
+    {
+     "err_max": 0.0037715246178475392,
+     "err_mean": 0.0007470922200440286,
+     "visited": 40,
+     "min_visits": 180.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 1.999181683255631e-06,
+     "err_mean": 2.7914222323531027e-07,
+     "visited": 40,
+     "min_visits": 529.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 2.604493801597346e-09,
+     "err_mean": 2.1501820245397914e-09,
+     "visited": 40,
+     "min_visits": 1486.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 1.4272567605057574e-09,
+     "err_mean": 9.736834930800665e-10,
+     "visited": 40,
+     "min_visits": 2054.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 68.86285448074341
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "rm",
+   "known_R": true,
+   "seed": 1,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.469318055902004,
+     "err_mean": 0.16919774217913736,
+     "visited": 40,
+     "min_visits": 1.0,
+     "score": 0.6191440294884869,
+     "episode": 30
+    },
+    {
+     "err_max": 0.16153769768166423,
+     "err_mean": 0.0422308919255223,
+     "visited": 40,
+     "min_visits": 13.0,
+     "score": 0.6410376147381027,
+     "episode": 100
+    },
+    {
+     "err_max": 0.02301119546206681,
+     "err_mean": 0.00366866910092283,
+     "visited": 40,
+     "min_visits": 48.0,
+     "score": 0.6607651522906058,
+     "episode": 300
+    },
+    {
+     "err_max": 0.00010726814203639736,
+     "err_mean": 1.644718180995992e-05,
+     "visited": 40,
+     "min_visits": 172.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 1.8552874074705553e-08,
+     "err_mean": 2.1051885965758774e-09,
+     "visited": 40,
+     "min_visits": 536.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 2.623774745535166e-14,
+     "err_mean": 1.024607561006052e-14,
+     "visited": 40,
+     "min_visits": 1466.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 2.6212680221625804e-14,
+     "err_mean": 1.0242862124619012e-14,
+     "visited": 40,
+     "min_visits": 1988.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 48.043001890182495
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "rm",
+   "known_R": true,
+   "seed": 2,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5101924399409816,
+     "err_mean": 0.1777277891354872,
+     "visited": 40,
+     "min_visits": 2.0,
+     "score": 0.5009621490108113,
+     "episode": 30
+    },
+    {
+     "err_max": 0.20824333878714613,
+     "err_mean": 0.047055024555636295,
+     "visited": 40,
+     "min_visits": 14.0,
+     "score": 0.6467928979541593,
+     "episode": 100
+    },
+    {
+     "err_max": 0.020830722806289236,
+     "err_mean": 0.003883746037813303,
+     "visited": 40,
+     "min_visits": 44.0,
+     "score": 0.6263818016598169,
+     "episode": 300
+    },
+    {
+     "err_max": 0.00011077948582973861,
+     "err_mean": 1.706951740622642e-05,
+     "visited": 40,
+     "min_visits": 181.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 1.5840059277159137e-08,
+     "err_mean": 1.8572404445319888e-09,
+     "visited": 40,
+     "min_visits": 530.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 2.5424947120419876e-14,
+     "err_mean": 9.784230046165645e-15,
+     "visited": 40,
+     "min_visits": 1465.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 2.5399336757798444e-14,
+     "err_mean": 9.783724735431235e-15,
+     "visited": 40,
+     "min_visits": 2031.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 47.55891156196594
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "floor",
+   "known_R": false,
+   "seed": 0,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5903335214682128,
+     "err_mean": 0.3082183753762571,
+     "visited": 40,
+     "min_visits": 1.0,
+     "score": 0.3620421172056499,
+     "episode": 30
+    },
+    {
+     "err_max": 0.2999694707006506,
+     "err_mean": 0.16750423107352602,
+     "visited": 40,
+     "min_visits": 12.0,
+     "score": 0.5686508223763311,
+     "episode": 100
+    },
+    {
+     "err_max": 0.12848408893064078,
+     "err_mean": 0.04523462914346816,
+     "visited": 40,
+     "min_visits": 45.0,
+     "score": 0.6446345022919462,
+     "episode": 300
+    },
+    {
+     "err_max": 0.005512468830915245,
+     "err_mean": 0.000940811011396084,
+     "visited": 40,
+     "min_visits": 178.0,
+     "score": 0.6397185113311217,
+     "episode": 1000
+    },
+    {
+     "err_max": 2.9320117852724027e-06,
+     "err_mean": 3.7346007385904436e-07,
+     "visited": 40,
+     "min_visits": 554.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 2.5043967128568876e-09,
+     "err_mean": 1.99378074519404e-09,
+     "visited": 40,
+     "min_visits": 1435.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 1.5793902597897571e-09,
+     "err_mean": 9.654136948516986e-10,
+     "visited": 40,
+     "min_visits": 1957.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 71.37440538406372
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "floor",
+   "known_R": false,
+   "seed": 1,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5062138392983156,
+     "err_mean": 0.2992033597134186,
+     "visited": 40,
+     "min_visits": 1.0,
+     "score": 0.37981124316405307,
+     "episode": 30
+    },
+    {
+     "err_max": 0.2862676724769032,
+     "err_mean": 0.15722598457686848,
+     "visited": 40,
+     "min_visits": 13.0,
+     "score": 0.5388695450841858,
+     "episode": 100
+    },
+    {
+     "err_max": 0.11939749768600443,
+     "err_mean": 0.0403510795577648,
+     "visited": 40,
+     "min_visits": 48.0,
+     "score": 0.6443722972819961,
+     "episode": 300
+    },
+    {
+     "err_max": 0.004323548810433477,
+     "err_mean": 0.0008600256672541102,
+     "visited": 40,
+     "min_visits": 173.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 2.6171895764025655e-06,
+     "err_mean": 3.4407860042032363e-07,
+     "visited": 40,
+     "min_visits": 536.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 2.3780926945637178e-09,
+     "err_mean": 1.9262486013497094e-09,
+     "visited": 40,
+     "min_visits": 1492.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 1.5204233165949316e-09,
+     "err_mean": 9.461407786581221e-10,
+     "visited": 40,
+     "min_visits": 2018.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 70.48045229911804
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "floor",
+   "known_R": true,
+   "seed": 0,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5609463253664915,
+     "err_mean": 0.17182953387295963,
+     "visited": 40,
+     "min_visits": 1.0,
+     "score": 0.536808752189229,
+     "episode": 30
+    },
+    {
+     "err_max": 0.16871936837456922,
+     "err_mean": 0.04145495650714821,
+     "visited": 40,
+     "min_visits": 12.0,
+     "score": 0.6056790349582698,
+     "episode": 100
+    },
+    {
+     "err_max": 0.017887114553645594,
+     "err_mean": 0.0036277579144220126,
+     "visited": 40,
+     "min_visits": 45.0,
+     "score": 0.6849411214563986,
+     "episode": 300
+    },
+    {
+     "err_max": 0.00013448555766468393,
+     "err_mean": 1.8528544489029343e-05,
+     "visited": 40,
+     "min_visits": 178.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 2.4000196784944925e-08,
+     "err_mean": 2.5670211474287348e-09,
+     "visited": 40,
+     "min_visits": 542.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 1.7269255889935167e-14,
+     "err_mean": 7.394238406596789e-15,
+     "visited": 40,
+     "min_visits": 1414.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 1.7269184829424433e-14,
+     "err_mean": 7.394234996526024e-15,
+     "visited": 40,
+     "min_visits": 1935.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 47.60449409484863
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "floor",
+   "known_R": false,
+   "seed": 2,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5323499520182747,
+     "err_mean": 0.30283527843248503,
+     "visited": 40,
+     "min_visits": 2.0,
+     "score": 0.3899113658328942,
+     "episode": 30
+    },
+    {
+     "err_max": 0.31600992619365464,
+     "err_mean": 0.15490675722539754,
+     "visited": 40,
+     "min_visits": 14.0,
+     "score": 0.48476320233797243,
+     "episode": 100
+    },
+    {
+     "err_max": 0.11856313991033289,
+     "err_mean": 0.03814494734394831,
+     "visited": 40,
+     "min_visits": 44.0,
+     "score": 0.6992782703662399,
+     "episode": 300
+    },
+    {
+     "err_max": 0.0037715246178475392,
+     "err_mean": 0.0007470922200440286,
+     "visited": 40,
+     "min_visits": 180.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 1.999181683255631e-06,
+     "err_mean": 2.7914222323531027e-07,
+     "visited": 40,
+     "min_visits": 529.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 2.2494748415044514e-09,
+     "err_mean": 1.8844635021198987e-09,
+     "visited": 40,
+     "min_visits": 1484.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 1.3761775650668588e-09,
+     "err_mean": 9.195112943075588e-10,
+     "visited": 40,
+     "min_visits": 2052.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 72.5542163848877
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "floor",
+   "known_R": true,
+   "seed": 1,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.469318055902004,
+     "err_mean": 0.16919774217913736,
+     "visited": 40,
+     "min_visits": 1.0,
+     "score": 0.6191440294884869,
+     "episode": 30
+    },
+    {
+     "err_max": 0.16153769768166423,
+     "err_mean": 0.0422308919255223,
+     "visited": 40,
+     "min_visits": 13.0,
+     "score": 0.6410376147381027,
+     "episode": 100
+    },
+    {
+     "err_max": 0.02301119546206681,
+     "err_mean": 0.00366866910092283,
+     "visited": 40,
+     "min_visits": 48.0,
+     "score": 0.6607651522906058,
+     "episode": 300
+    },
+    {
+     "err_max": 0.00010726814203639736,
+     "err_mean": 1.644718180995992e-05,
+     "visited": 40,
+     "min_visits": 172.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 1.8552874074705553e-08,
+     "err_mean": 2.1051885965758774e-09,
+     "visited": 40,
+     "min_visits": 536.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 1.7766301254003915e-14,
+     "err_mean": 7.622325264776472e-15,
+     "visited": 40,
+     "min_visits": 1466.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 1.7767916327994082e-14,
+     "err_mean": 7.624587986190618e-15,
+     "visited": 40,
+     "min_visits": 1988.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 46.35764932632446
+  },
+  {
+   "env": "qubit_prep",
+   "rule": "floor",
+   "known_R": true,
+   "seed": 2,
+   "entries": 40,
+   "checkpoints": [
+    {
+     "err_max": 0.5101924399409816,
+     "err_mean": 0.1777277891354872,
+     "visited": 40,
+     "min_visits": 2.0,
+     "score": 0.5009621490108113,
+     "episode": 30
+    },
+    {
+     "err_max": 0.20824333878714613,
+     "err_mean": 0.047055024555636295,
+     "visited": 40,
+     "min_visits": 14.0,
+     "score": 0.6467928979541593,
+     "episode": 100
+    },
+    {
+     "err_max": 0.020830722806289236,
+     "err_mean": 0.003883746037813303,
+     "visited": 40,
+     "min_visits": 44.0,
+     "score": 0.6263818016598169,
+     "episode": 300
+    },
+    {
+     "err_max": 0.00011077948582973861,
+     "err_mean": 1.706951740622642e-05,
+     "visited": 40,
+     "min_visits": 181.0,
+     "score": 0.6796174744658203,
+     "episode": 1000
+    },
+    {
+     "err_max": 1.5840059277159137e-08,
+     "err_mean": 1.8572404445319888e-09,
+     "visited": 40,
+     "min_visits": 530.0,
+     "score": 0.6796174744658203,
+     "episode": 3000
+    },
+    {
+     "err_max": 1.7179628491489648e-14,
+     "err_mean": 7.223338538982235e-15,
+     "visited": 40,
+     "min_visits": 1465.0,
+     "score": 0.6796174744658203,
+     "episode": 10000
+    },
+    {
+     "err_max": 1.7186680875387538e-14,
+     "err_mean": 7.225455133451983e-15,
+     "visited": 40,
+     "min_visits": 2031.0,
+     "score": 0.6796174744658203,
+     "episode": 30000
+    }
+   ],
+   "sec": 46.51122045516968
+  }
+ ],
+ "exact_score": {
+  "random_oldp": 0.9523983199366566,
+  "pointing": 0.98640843183662,
+  "qubit_prep": 0.6796174744658203
+ }
+}

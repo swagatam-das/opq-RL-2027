@@ -1,0 +1,39 @@
+
+=== Sun Nov  8 17:47:21 2026  python experiments/e18_transfer.py --env random_oldp --seeds 5 --episodes 3000 --agents opq_soft,dqn,lin_q,dqn_aug,dqn_aug_reach,model_exh --out results/e19
+   opq_soft   seed 0: training rho_0 0.837   held-out rho_0 0.955
+   opq_soft   seed 1: training rho_0 0.853   held-out rho_0 0.953
+   opq_soft   seed 2: training rho_0 0.837   held-out rho_0 0.955
+   opq_soft   seed 3: training rho_0 0.838   held-out rho_0 0.952
+   opq_soft   seed 4: training rho_0 0.837   held-out rho_0 0.956
+== random_oldp opq_soft   training rho_0 0.840 +- 0.007   held-out 0.954 +- 0.001
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+   dqn        seed 0: training rho_0 1.000   held-out rho_0 0.890
+   dqn        seed 1: training rho_0 0.998   held-out rho_0 0.818
+   dqn        seed 2: training rho_0 0.997   held-out rho_0 0.817
+   dqn        seed 3: training rho_0 0.999   held-out rho_0 0.852
+   dqn        seed 4: training rho_0 1.000   held-out rho_0 0.921
+== random_oldp dqn        training rho_0 0.999 +- 0.001   held-out 0.860 +- 0.041
+   lin_q      seed 0: training rho_0 0.988   held-out rho_0 0.732
+   lin_q      seed 1: training rho_0 0.985   held-out rho_0 0.798
+   lin_q      seed 2: training rho_0 0.988   held-out rho_0 0.734
+   lin_q      seed 3: training rho_0 0.985   held-out rho_0 0.725
+   lin_q      seed 4: training rho_0 0.990   held-out rho_0 0.771
+== random_oldp lin_q      training rho_0 0.987 +- 0.002   held-out 0.752 +- 0.028
+   dqn_aug    seed 0: training rho_0 1.000   held-out rho_0 0.994
+   dqn_aug    seed 1: training rho_0 1.000   held-out rho_0 0.998
+   dqn_aug    seed 2: training rho_0 1.000   held-out rho_0 0.991
+   dqn_aug    seed 3: training rho_0 1.000   held-out rho_0 0.995
+   dqn_aug    seed 4: training rho_0 1.000   held-out rho_0 0.996
+== random_oldp dqn_aug    training rho_0 1.000 +- 0.000   held-out 0.995 +- 0.002
+   dqn_aug_reach seed 0: training rho_0 1.000   held-out rho_0 0.864
+   dqn_aug_reach seed 1: training rho_0 0.998   held-out rho_0 0.868
+   dqn_aug_reach seed 2: training rho_0 1.000   held-out rho_0 0.873
+   dqn_aug_reach seed 3: training rho_0 0.998   held-out rho_0 0.917
+   dqn_aug_reach seed 4: training rho_0 1.000   held-out rho_0 0.900
+== random_oldp dqn_aug_reach training rho_0 0.999 +- 0.001   held-out 0.884 +- 0.021
+   model_exh  seed 0: training rho_0 1.000   held-out rho_0 1.000
+   model_exh  seed 1: training rho_0 1.000   held-out rho_0 1.000
+   model_exh  seed 2: training rho_0 1.000   held-out rho_0 1.000
+   model_exh  seed 3: training rho_0 1.000   held-out rho_0 1.000
+   model_exh  seed 4: training rho_0 1.000   held-out rho_0 1.000
+== random_oldp model_exh  training rho_0 1.000 +- 0.000   held-out 1.000 +- 0.000
