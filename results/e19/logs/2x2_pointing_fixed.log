@@ -1,0 +1,69 @@
+
+=== Sun Nov  8 17:35:10 2026  python experiments/e18_control.py --env pointing --regime fixed --seeds 5 --episodes 3000 --agents opq_soft,dqn,lin_q,lin_q_max,dqn_aug,dqn_aug_u4,dqn_aug_knownR,dqn_aug_reach,dqn_u4,model_exh --out results/e19
+[pointing/fixed] V* = [6.2002], V_rand = [3.1365] (1.6s)
+   ref opq_soft_exact_beta1         score=0.876 value=5.822 certificate=15.144
+   ref opq_soft_exact_beta2         score=0.988 value=6.165 certificate=10.635
+   ref opq_soft_exact_beta5         score=0.987 value=6.160 certificate=8.176
+   ref opq_soft_exact_beta10        score=0.982 value=6.145 certificate=7.409
+   ref opq_pi_exact                 score=0.876 value=5.822
+   opq_soft         seed 0: final score 0.985 value 6.156 (11s)
+   opq_soft         seed 1: final score 0.980 value 6.140 (11s)
+   opq_soft         seed 2: final score 0.978 value 6.132 (11s)
+   opq_soft         seed 3: final score 0.977 value 6.131 (12s)
+   opq_soft         seed 4: final score 0.984 value 6.152 (12s)
+== opq_soft         final score 0.981 +- 0.003
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+   dqn              seed 0: final score 0.983 value 6.148 (13s)
+   dqn              seed 1: final score 0.993 value 6.180 (14s)
+   dqn              seed 2: final score 0.956 value 6.065 (13s)
+   dqn              seed 3: final score 0.970 value 6.109 (14s)
+   dqn              seed 4: final score 0.987 value 6.159 (14s)
+== dqn              final score 0.978 +- 0.013
+   lin_q            seed 0: final score 0.978 value 6.134 (4s)
+   lin_q            seed 1: final score 0.960 value 6.077 (5s)
+   lin_q            seed 2: final score 0.956 value 6.064 (4s)
+   lin_q            seed 3: final score 0.917 value 5.946 (4s)
+   lin_q            seed 4: final score 0.963 value 6.086 (4s)
+== lin_q            final score 0.955 +- 0.020
+   lin_q_max        seed 0: final score 0.973 value 6.118 (4s)
+   lin_q_max        seed 1: final score 0.963 value 6.088 (4s)
+   lin_q_max        seed 2: final score 0.969 value 6.105 (4s)
+   lin_q_max        seed 3: final score 0.964 value 6.089 (4s)
+   lin_q_max        seed 4: final score 0.964 value 6.091 (4s)
+== lin_q_max        final score 0.967 +- 0.004
+   dqn_aug          seed 0: final score 0.970 value 6.110 (20s)
+   dqn_aug          seed 1: final score 0.986 value 6.156 (21s)
+   dqn_aug          seed 2: final score 0.986 value 6.159 (22s)
+   dqn_aug          seed 3: final score 0.973 value 6.118 (24s)
+   dqn_aug          seed 4: final score 0.988 value 6.163 (24s)
+== dqn_aug          final score 0.981 +- 0.007
+   dqn_aug_u4       seed 0: final score 0.987 value 6.159 (60s)
+   dqn_aug_u4       seed 1: final score 0.988 value 6.162 (58s)
+   dqn_aug_u4       seed 2: final score 0.988 value 6.165 (59s)
+   dqn_aug_u4       seed 3: final score 0.985 value 6.153 (60s)
+   dqn_aug_u4       seed 4: final score 0.990 value 6.170 (59s)
+== dqn_aug_u4       final score 0.987 +- 0.002
+   dqn_aug_knownR   seed 0: final score 0.988 value 6.164 (21s)
+   dqn_aug_knownR   seed 1: final score 0.994 value 6.181 (21s)
+   dqn_aug_knownR   seed 2: final score 0.985 value 6.154 (22s)
+   dqn_aug_knownR   seed 3: final score 0.976 value 6.128 (22s)
+   dqn_aug_knownR   seed 4: final score 0.991 value 6.172 (22s)
+== dqn_aug_knownR   final score 0.987 +- 0.006
+   dqn_aug_reach    seed 0: final score 0.980 value 6.140 (33s)
+   dqn_aug_reach    seed 1: final score 0.986 value 6.157 (32s)
+   dqn_aug_reach    seed 2: final score 0.968 value 6.101 (29s)
+   dqn_aug_reach    seed 3: final score 0.988 value 6.163 (33s)
+   dqn_aug_reach    seed 4: final score 0.987 value 6.160 (30s)
+== dqn_aug_reach    final score 0.982 +- 0.008
+   dqn_u4           seed 0: final score 0.991 value 6.173 (33s)
+   dqn_u4           seed 1: final score 0.983 value 6.150 (32s)
+   dqn_u4           seed 2: final score 0.985 value 6.154 (32s)
+   dqn_u4           seed 3: final score 0.984 value 6.150 (31s)
+   dqn_u4           seed 4: final score 0.998 value 6.193 (32s)
+== dqn_u4           final score 0.988 +- 0.006
+   model_exh        seed 0: final score 1.000 value 6.200 (20s)
+   model_exh        seed 1: final score 1.000 value 6.200 (20s)
+   model_exh        seed 2: final score 1.000 value 6.200 (19s)
+   model_exh        seed 3: final score 1.000 value 6.200 (19s)
+   model_exh        seed 4: final score 1.000 value 6.200 (18s)
+== model_exh        final score 1.000 +- 0.000

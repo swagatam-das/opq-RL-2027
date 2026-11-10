@@ -1,0 +1,26 @@
+
+=== Sun Nov  8 18:26:28 2026  python experiments/e19_horizon.py --env qubit_prep --H 12 --seeds 3 --episodes 3000 --sims 100,1000 --model_eps 400 --out results/e19
+[qubit_prep_H12] K=5 N=4 nM=13 gamma=1.0  exact DP: False
+   references (1s): V*=n/a (K^H too large), certificate(beta=5, train)=4.305
+   mcts-100 exact model: train 0.729  held-out 0.801 (30 ms/decision)
+   mcts-1000 exact model: train 1.000  held-out 0.821 (339 ms/decision)
+   opq_soft               seed 0: train 0.729  held-out 0.810  [{'train_s': 21.4, 'decision_s': 2.9354821890592575e-05, 'lse_beta_spread': 5.000000096592676}]
+   opq_soft               seed 1: train 0.854  held-out 0.771  [{'train_s': 21.3, 'decision_s': 2.9399525374174118e-05, 'lse_beta_spread': 5.000000257217775}]
+   opq_soft               seed 2: train 0.854  held-out 0.751  [{'train_s': 21.4, 'decision_s': 3.067683428525925e-05, 'lse_beta_spread': 5.000000174986436}]
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+   dqn                    seed 0: train 1.000  held-out 0.817  [{'train_s': 22.4, 'decision_s': 0.00018086563795804977}]
+   dqn                    seed 1: train 1.000  held-out 0.793  [{'train_s': 22.0, 'decision_s': 0.00018078135326504707}]
+   dqn                    seed 2: train 1.000  held-out 0.703  [{'train_s': 22.1, 'decision_s': 0.00017262157052755356}]
+   dqn_aug                seed 0: train 1.000  held-out 0.832  [{'train_s': 39.2, 'decision_s': 0.00017046695575118065}]
+   dqn_aug                seed 1: train 1.000  held-out 0.836  [{'train_s': 39.1, 'decision_s': 0.00018399721011519432}]
+   dqn_aug                seed 2: train 1.000  held-out 0.858  [{'train_s': 39.8, 'decision_s': 0.0001826002262532711}]
+   lin_q                  seed 0: train 0.729  held-out 0.530  [{'train_s': 11.4, 'decision_s': 9.974651038646698e-05}]
+   lin_q                  seed 1: train 0.729  held-out 0.549  [{'train_s': 11.3, 'decision_s': 9.800214320421219e-05}]
+   lin_q                  seed 2: train 0.729  held-out 0.675  [{'train_s': 11.3, 'decision_s': 9.954627603292465e-05}]
+   mcts-100_learned_model seed 0: train 1.000  held-out 0.719  [{'n_latents_evaluated': 3, 'decision_s': 0.029136385768651962}]
+   mcts-1000_learned_model seed 0: train 0.854  held-out 0.828  [{'n_latents_evaluated': 3, 'decision_s': 0.34109005704522133}]
+   mcts-100_learned_model seed 1: train 0.854  held-out 0.741  [{'n_latents_evaluated': 3, 'decision_s': 0.03132105339318514}]
+   mcts-1000_learned_model seed 1: train 1.000  held-out 0.850  [{'n_latents_evaluated': 3, 'decision_s': 0.3248038114979863}]
+   mcts-100_learned_model seed 2: train 0.854  held-out 0.697  [{'n_latents_evaluated': 3, 'decision_s': 0.029129144735634327}]
+   mcts-1000_learned_model seed 2: train 1.000  held-out 0.787  [{'n_latents_evaluated': 3, 'decision_s': 0.3252273555845022}]
+done (325s)

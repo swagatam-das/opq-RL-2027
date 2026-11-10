@@ -20,6 +20,7 @@ def main():
     ap.add_argument("--seeds", type=int, default=5)
     ap.add_argument("--episodes", type=int, default=3000)
     ap.add_argument("--agents", default="opq_soft,opq_pi,dqn,drqn")
+    ap.add_argument("--out", default=os.path.join(os.path.dirname(__file__), "..", "results", "e18"))
     args = ap.parse_args()
     env = ENVS[args.env](seed=0)
     rng = np.random.default_rng(999)
@@ -41,9 +42,8 @@ def main():
         a = np.array([[r["in_dist"], r["transfer"]] for r in res["runs"][name]])
         print(f"== {args.env} {name:10s} training rho_0 {a[:, 0].mean():.3f} +- {a[:, 0].std():.3f}   "
               f"held-out {a[:, 1].mean():.3f} +- {a[:, 1].std():.3f}", flush=True)
-    out = os.path.join(os.path.dirname(__file__), "..", "results", "e18")
-    os.makedirs(out, exist_ok=True)
-    json.dump(res, open(os.path.join(out, f"{args.env}_transfer.json"), "w"), indent=1)
+    os.makedirs(args.out, exist_ok=True)
+    json.dump(res, open(os.path.join(args.out, f"{args.env}_transfer.json"), "w"), indent=1)
 
 
 if __name__ == "__main__":

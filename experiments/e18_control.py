@@ -19,7 +19,8 @@ import numpy as np
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from opq.envs import ENVS
 from opq.agents import OpQSoft, OpQPI, TabularQ, op_soft_exact, op_policy_eval_exact, greedy_from_ops
-from opq.deep_agents import DQN, DRQN
+from opq.deep_agents import DQN, DRQN, DQNAug
+from opq.agents_ext import LinearQ, ModelExh
 from opq.train import train
 from opq.core import tau
 
@@ -31,6 +32,15 @@ AGENTS = {
     "scalar_history": lambda env, s: TabularQ(env, "history", seed=s),
     "dqn": lambda env, s: DQN(env, seed=s),
     "drqn": lambda env, s: DRQN(env, seed=s),
+    # ---- E19: 2x2 comparison (nonlinear/linear in rho  x  operators unknown/known) and planners
+    "lin_q": lambda env, s: LinearQ(env, soft=True, seed=s),
+    "lin_q_max": lambda env, s: LinearQ(env, soft=False, seed=s),
+    "dqn_u4": lambda env, s: DQN(env, updates_per_step=4, seed=s),
+    "dqn_aug": lambda env, s: DQNAug(env, seed=s),
+    "dqn_aug_u4": lambda env, s: DQNAug(env, updates_per_step=4, seed=s),
+    "dqn_aug_knownR": lambda env, s: DQNAug(env, known_R=True, seed=s),
+    "dqn_aug_reach": lambda env, s: DQNAug(env, aug_rho="reach", seed=s),
+    "model_exh": lambda env, s: ModelExh(env, seed=s),
 }
 
 

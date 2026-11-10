@@ -227,3 +227,122 @@ class DRQN:
             X = self.hist_x(m0["m"], hist, t, m)[None]
             return int(np.argmax(np.asarray(self._q(p, X))[0, -1]))
         return pol
+
+
+# ------------------------------------------------------------------------------ DQN + known K_a
+class DQNAug(DQN):
+    """DQN on rho_t trained on real transitions PLUS extra transitions generated from the known
+    operators K_a (the same knowledge OpQ uses).
+
+    Each real transition (t, m, a, m', done) is stored.  At every update the batch contains
+    `batch - n_syn` real transitions and `n_syn` synthetic ones: the structural part
+    (t, m, a, m', done) is resampled from the stored real transitions (so the mode kernel is learned
+    from data, as in OpQ), a fresh latent rho is drawn, rho' = K_a rho K_a^dag is computed with the
+    known operator and the reward is tau(R_hat(m, a) rho') with the same least-squares reward
+    model OpQ uses (or the true R if known_R).
+
+      aug_rho = 'pure'  : rho uniform over pure states (the 'random' regime distribution)
+      aug_rho = 'reach' : rho_t reached by t random actions from the initial latent (on-support only)
+    """
+    name = "DQN + known K_a"
+
+    def __init__(self, env, aug_frac=0.5, known_R=False, aug_rho="pure", updates_per_step=1,
+                 buffer=50000, **kw):
+        from .agents import RewardModel
+        super().__init__(env, buffer=buffer, updates_per_step=updates_per_step, **kw)
+        self.Rm = RewardModel(env, known_R)
+        self.Uc = np.stack(env.U)
+        self.n_syn = int(round(self.batch * aug_frac))
+        self.aug_rho = aug_rho
+        self.struct = np.zeros((buffer, 5), dtype=np.int64)       # t, m, a, m', done
+        self.Bc = np.stack(self.basis).conj()                      # (d, N, N)
+        self.srng = np.random.default_rng(10_000 + kw.get("seed", 0))
+        tag = {"pure": "", "reach": ", reachable rho"}[aug_rho]
+        self.name = "DQN + known K_a" + tag + (" (known R)" if known_R else "")
+
+        g = env.gamma
+
+        def loss(p, tp, x, a, r, x2, d):
+            q = mlp_apply(p, x)[jnp.arange(x.shape[0]), a.astype(jnp.int32)]
+            y = r + g * (1 - d) * jnp.max(mlp_apply(tp, x2), axis=1)
+            return jnp.mean((q - jax.lax.stop_gradient(y)) ** 2)
+
+        @jax.jit
+        def update(p, tp, ost, x, a, r, x2, d):
+            l, gr = jax.value_and_grad(loss)(p, tp, x, a, r, x2, d)
+            u, ost = self.opt.update(gr, ost, p)
+            return optax.apply_updates(p, u), ost, l
+        self._update = update
+
+    # -- batched features ------------------------------------------------------------
+    def feat_batch(self, t, m, rho):
+        H, nM, B = self.env.H, self.env.nM, len(t)
+        x = np.zeros((B, self.din), dtype=np.float32)
+        ok = t < H
+        x[np.arange(B)[ok], t[ok]] = 1
+        x[np.arange(B), H + m] = 1
+        x[:, H + nM:] = np.real(np.einsum('dij,bij->bd', self.Bc, rho))
+        return x
+
+    def _rho_syn(self, t):
+        e, B = self.env, len(t)
+        if self.aug_rho == "pure" or e.random_init:
+            base = None
+        else:
+            base = e.rho0
+        if self.aug_rho == "pure":
+            v = self.srng.normal(size=(B, e.N))
+            if e.is_complex:
+                v = v + 1j * self.srng.normal(size=(B, e.N))
+            v /= np.linalg.norm(v, axis=1, keepdims=True)
+            return e.N * np.einsum('bi,bj->bij', v, v.conj())
+        # reachable: start from rho_0 (fixed) or a random pure state (random regime), apply t random actions
+        if base is None:
+            v = self.srng.normal(size=(B, e.N))
+            if e.is_complex:
+                v = v + 1j * self.srng.normal(size=(B, e.N))
+            v /= np.linalg.norm(v, axis=1, keepdims=True)
+            rho = e.N * np.einsum('bi,bj->bij', v, v.conj())
+        else:
+            rho = np.repeat(base[None], B, axis=0).astype(np.result_type(base, float))
+        for k in range(e.H):
+            idx = np.flatnonzero(t > k)
+            if len(idx) == 0:
+                break
+            a = self.srng.integers(e.K, size=len(idx))
+            U = self.Uc[a]
+            rho[idx] = np.einsum('bij,bjk,blk->bil', U, rho[idx], U.conj())
+        return rho
+
+    def observe(self, t, m, rho, a, r, t2, m2, rho2, done, hist):
+        self.Rm.update(m, a, rho2, r)
+        i = self.ptr
+        self.buf["x"][i], self.buf["x2"][i] = self.feat(t, m, rho), self.feat(t2, m2, rho2)
+        self.buf["a"][i], self.buf["r"][i], self.buf["d"][i] = a, r, float(done)
+        self.struct[i] = (t, m, a, m2, int(done))
+        self.ptr, self.size = (i + 1) % self.cap, min(self.size + 1, self.cap)
+        self.steps += 1
+        if self.size >= self.batch:
+            for _ in range(self.ups):
+                self.params, self.ost, _ = self._update(self.params, self.target, self.ost,
+                                                        *self._batch())
+        if self.steps % self.target_every == 0:
+            self.target = self.params
+
+    def _batch(self):
+        nr = self.batch - self.n_syn
+        idx = self.rng.integers(self.size, size=nr)
+        x, a, r = self.buf["x"][idx], self.buf["a"][idx], self.buf["r"][idx]
+        x2, d = self.buf["x2"][idx], self.buf["d"][idx]
+        if self.n_syn == 0:
+            return x, a, r, x2, d
+        j = self.rng.integers(self.size, size=self.n_syn)
+        t, m, aa, m2, dd = self.struct[j].T
+        rho = self._rho_syn(t)
+        rho2 = np.einsum('bij,bjk,blk->bil', self.Uc[aa], rho, self.Uc[aa].conj())
+        Rb = np.stack([self.Rm(int(mi), int(ai)) for mi, ai in zip(m, aa)])
+        rs = np.real(np.einsum('bij,bji->b', Rb, rho2)) / self.env.N
+        xs, x2s = self.feat_batch(t, m, rho), self.feat_batch(t + 1, m2, rho2)
+        return (np.concatenate([x, xs]), np.concatenate([a, aa.astype(np.float32)]),
+                np.concatenate([r, rs.astype(np.float32)]), np.concatenate([x2, x2s]),
+                np.concatenate([d, dd.astype(np.float32)]))
